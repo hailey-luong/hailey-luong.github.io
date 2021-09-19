@@ -1,0 +1,137 @@
+html {
+    font-size: 18px;
+    @media (max-width: $laptop) {
+        font-size: 16px;
+    }
+    @media (max-width: $mobile) {
+        font-size: 14px;
+    }
+}
+
+html {
+    font-family: 'Work Sans', sans-serif;
+    color: $primary;
+}
+
+a {
+    color: #4C74B9;
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.875em;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    strong {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 6em;
+    margin-left: -0.5rem;
+    margin-top: 8rem;
+    @media screen and (max-width: $desktop) {
+        font-size: 5em;
+    }
+    @media screen and (max-width: $laptop) {
+        font-size: 3.5em;
+        margin-top: 6rem;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 2.5em;
+        margin-top: 6rem;
+    }
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2.5em;
+    letter-spacing: 0.025em;
+    line-height: 0.1em;
+    width: 100%;
+    border-bottom: 1px solid $primary;
+    @media screen and (max-width: $laptop) {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5em;
+    }
+    @media screen and (max-width: $laptop) {
+        margin-top: 1rem;
+        margin-bottom: 1em;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 1.5em;
+    }
+}
+
+h2 span { 
+    background:$white;
+    padding-right: 1rem;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 700;
+    letter-spacing: 0.075em;
+    margin-bottom: 2;
+}
+
+.about-right {
+    h3 {
+        margin-bottom: 0;
+    }
+}
+
+h4 {
+    font-size: 1.5em;
+    color: $white;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    display: inline;
+}
+
+h5 {
+    font-size: 2em;
+    font-weight: 200;
+    letter-spacing: 0.0125em;
+    line-height: 1.6em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    @media screen and (max-width: $desktop) {
+        font-size: 1.75em;
+    }
+    @media screen and (max-width: $mobile) {
+        font-size: 1.25em;
+    }
+    b {
+        font-weight: 400;
+    }
+}
+
+.card {
+    color: $primary;
+    h1 {
+        font-size: 3.5em;
+        margin-left: -0.1rem;
+        margin-bottom: 0.75rem;
+        margin-top: 0;
+        white-space: nowrap;
+        @media screen and (max-width: $desktop) {
+            font-size: 2.75em;
+        }
+        @media screen and (max-width: $mobile) {
+            font-size: 2.5em;
+            margin-bottom: 0;
+        }
+    }
+}
