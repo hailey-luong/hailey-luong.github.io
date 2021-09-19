@@ -11,7 +11,7 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
-// show images on scroll (from https://www.youtube.com/watch?v=-ths7kNIFnw)
+// show images on scroll (from CSS Animation on YouTube)
 
 var scroll = window.requestAnimationFrame ||
             function(callback){ window.setTimeout(callback, 1000/60)};

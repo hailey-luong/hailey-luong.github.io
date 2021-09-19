@@ -31,6 +31,13 @@ p {
     }
 }
 
+.mobile-message {
+    visibility: hidden;
+    @media screen and (max-width: $mobile) {
+        visibility: visible;
+    }
+}
+
 h1 {
     font-weight: 100;
     font-size: 6em;
@@ -83,7 +90,7 @@ h3 {
     font-size: 0.875em;
     font-weight: 700;
     letter-spacing: 0.075em;
-    margin-bottom: 2;
+    margin-bottom: 0;
 }
 
 .about-right {

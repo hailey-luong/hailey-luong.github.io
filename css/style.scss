@@ -116,7 +116,6 @@ html {
         width: 80%;
     }
     @media screen and (max-width: $mobile) {
-        position: relative;
         top: 1rem;
         margin-bottom: 1rem;
         width: 100%;
@@ -256,6 +255,7 @@ section {
 
 #footer {
     background-color: $secondary;
+    margin-top: 6rem;
     p {
         @media screen and (max-width: $mobile) {
             font-size: 0.75em;
@@ -425,7 +425,7 @@ footer {
     }
 }
 
-/* img grid */
+//* img grid
 
 .img-grid {
   display: flex;
@@ -452,7 +452,7 @@ footer {
     }
 }
 
-/* column */
+//* column
 
 .text-col {
     display: flex;
@@ -495,7 +495,7 @@ footer {
     margin-top: 1rem;
 }
 
-.iframe-container{
+.iframe-container {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; 

@@ -46,6 +46,16 @@ p strong {
   font-weight: 700;
 }
 
+.mobile-message {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+  .mobile-message {
+    visibility: visible;
+  }
+}
+
 h1 {
   font-weight: 100;
   font-size: 6em;
@@ -116,7 +126,7 @@ h3 {
   font-size: 0.875em;
   font-weight: 700;
   letter-spacing: 0.075em;
-  margin-bottom: 2;
+  margin-bottom: 0;
 }
 
 .about-right h3 {
@@ -264,6 +274,8 @@ html {
 
 .container-fluid img {
   margin: 1rem 0 0 -1rem;
+  width: 100%;
+  height: auto;
 }
 
 .card {
@@ -512,12 +524,6 @@ html {
 }
 
 @media screen and (max-width: 500px) {
-  #footer {
-    margin-left: 1rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
   #footer p {
     font-size: 0.75em;
   }
@@ -757,7 +763,6 @@ footer {
   }
 }
 
-/* img grid */
 .img-grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,7 +805,6 @@ footer {
   }
 }
 
-/* column */
 .text-col {
   display: -webkit-box;
   display: -ms-flexbox;
