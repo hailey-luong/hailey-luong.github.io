@@ -65,6 +65,8 @@ html {
     margin-bottom: 2rem;
     img {
         margin: 1rem 0 0 -1rem;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -114,6 +116,7 @@ html {
         width: 80%;
     }
     @media screen and (max-width: $mobile) {
+        position: relative;
         top: 1rem;
         margin-bottom: 1rem;
         width: 100%;
@@ -253,11 +256,6 @@ section {
 
 #footer {
     background-color: $secondary;
-
-    @media screen and (max-width: $mobile) {
-        margin-left: 1rem;
-    }
-    margin-top: 6rem;
     p {
         @media screen and (max-width: $mobile) {
             font-size: 0.75em;
