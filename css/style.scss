@@ -19,6 +19,123 @@ html {
     position: relative;
 }
 
+body {
+    cursor: none;
+}
+
+.cursor {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $primary;
+    pointer-events: none;
+    z-index: 11;
+    mix-blend-mode: multiply;
+}
+
+@keyframes cursorAnim {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.expand {
+    animation:cursorAnim 0.5s forwards;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 16.5rem;
+    vertical-align: middle;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid $primary;
+    color: $primary;
+    overflow: hidden;
+    border-radius: 24px;
+    transition: all ease 0.3;
+    padding: 0.75rem 1.75rem;
+        h1 {
+            font-size: 1.05em;
+            font-weight: 600;
+            margin: 0;
+        }
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    z-index: -1;
+    transition: all ease 0.5s;
+}
+
+.button:hover {
+    color: $secondary-alt;
+}
+
+.button:hover:before {
+    left: 0;
+}
+
+.social {
+    bottom: 2rem;
+}
+
+.social a{
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        color: $primary;
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+        margin-right: 0.5rem;
+        border: 1px solid $primary;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+}
+
+.social a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: all ease 0.3s;
+}
+
+.social a:hover:before {
+    transform: scale(1);
+}
+
+.social a:hover {
+    color: $secondary-alt;
+}
+
 //* landing page
 
 .intro {
@@ -125,19 +242,25 @@ html {
     }
     .h1 {
         display: flex;
+        align-items: center;
     }
 }
 
 .arrow {
     margin-left: 1rem;
+    margin-top: 0.75rem;
     display: inline;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.25s ease-in;
     transition-delay: 0.075s;
+    @media screen and (max-width: $tablet) {
+        margin-top: 0.5rem;
+    }
 }
 
 .card:hover {
+    color: $white;
     .arrow {
         opacity: 1;
         visibility: visible;
@@ -166,20 +289,31 @@ html {
 }
 
 .ovopy {
-    background-color: #EBF4FD;
+    background-color: $ovopy;
+}
+.ovopy:hover {
+    background-color: $ovopy-alt;
 }
 
+
 .regent {
-    background-color: #FCEDEA;
+    background-color: $regent;
 }
+.regent:hover {
+    background-color: $regent-alt;
+}
+
+.discovergaming {
+    background-color: $discovergaming;
+}
+.discovergaming:hover {
+    background-color: $discovergaming-alt;
+}
+
 section {
     @media screen and (max-width: $tablet) {
         margin-left: -1rem;
     }
-}
-
-.discovergaming {
-    background-color: #E3F5F9;
 }
 
 //* nav bar
@@ -206,20 +340,16 @@ section {
     justify-content: space-between;
     margin: auto;
     @media screen and (max-width: 1500px) {
-        margin-left: 8rem;
-        margin-right: 8rem;
-    }
-    @media screen and (max-width: $desktop) {
-        margin-left: 7rem;
-        margin-right: 7rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
     @media screen and (max-width: $laptop) {
         margin-left: 4rem;
         margin-right: 4rem;
     }
     @media screen and (max-width: $tablet) {
-        margin-left: 3rem;
-        margin-right: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     @media screen and (max-width: $mobile) {
         margin-left: 1rem;
@@ -232,7 +362,12 @@ section {
         text-decoration: none;
         font-weight: 400;
         font-size: 1.25em;
-        margin-right: 2rem;
+        text-align: center;
+        padding: 0;
+        margin: 0 2rem 0 0;
+        @media screen and (max-width: $tablet) {
+            margin-left: 2rem;
+        }
     }
     ul {
         display: flex;
@@ -242,11 +377,13 @@ section {
     }
 }
 
-.nav-links {
+.nav-content {
     a {
         color: $white;
         :hover {
-            color: #DACFBE;
+            color: $secondary-alt;
+            transform: scale(1.25);
+            transition: all ease  0.175s;
         }
     }
 }
@@ -257,6 +394,7 @@ section {
     background-color: $secondary;
     margin-top: 6rem;
     p {
+        margin: 0;
         @media screen and (max-width: $mobile) {
             font-size: 0.75em;
         }
@@ -274,6 +412,8 @@ section {
         color: $primary;
         :hover {
             color: $primary-alt;
+            transform: scale(1.25);
+            transition: all ease  0.175s;
         }
     }
 }
@@ -516,4 +656,42 @@ footer {
     left: 0;
     margin: 0;
   }
+}
+
+//* mobile message
+
+.overlay, .popup {
+    visibility: hidden;
+    @media screen and (max-width: $mobile) {
+        visibility: visible;
+    }
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 20;
+    backdrop-filter: blur(.1rem);
+}
+
+.popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: $white;
+padding: 2rem;
+width: 85vw;
+z-index: 21;
+    h1 {
+        margin: 0 0 1rem 0;
+        font-weight: 600;
+        font-size: 2em;
+    }
 }

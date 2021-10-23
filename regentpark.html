@@ -11,8 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lexend:wght@100;300;400;700&family=Syne:wght@400;700;800&display=swap"
         rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/flexboxgrid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
@@ -20,6 +22,7 @@
 
 <body>
 
+    <!--navbar-->
     <nav id="navbar">
         <div class="nav-content">
             <div class="name">
@@ -42,31 +45,30 @@
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
-                        <li>
-                            <a href="https://github.com/hailey-luong" target="_blank">
-                                <div class="icon"></div>
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </nav>
 
+    <!--cursor-->
+    <div class="cursor"></div>
+
     <section>
         <section class="block">
-            <h1>Regent Park</h1>
+            <h1 data-aos="zoom-in-right" >Regent Park</h1>
             <h2><span>About</span></h2>
-            <div class="row about">
+            <div data-aos="fade-in" class="row about">
                 <div class="col-sm-12 col-md-8">
                     <h5>The Regent Park Community Centre website offers a range of activities that engage and connect
-                        the neighbourhood through online learning and socialization.</h5>
+                        the neighbourhood through online learning and remote socialization.</h5>
 
                     <h3>My Role</h3>
                     <p>I assisted in research, ideation, and led the creation of the final visual design system
-                        implemented throughout the website. For the high-fidelity prototype, I designed the <b>Homepage,
-                            Onboarding process, Arts & Crafts section,</b> and <b>Live Chat Agent.</b></p>
+                        implemented throughout the website. For the high-fidelity prototype, I designed the
+                        <strong>Homepage,
+                            Onboarding process, Arts & Crafts section,</strong> and <strong>Live Chat Agent.</strong>
+                    </p>
                 </div>
 
                 <div class="about-right col-sm-12 col-md-4">
@@ -117,7 +119,7 @@
         </section>
 
         <!--Process-->
-        <section class="block">
+        <section data-aos="fade-in" class="block">
             <h2><span>Process</span></h2>
             <div class="text">
                 <div class="col-xs-12 col-md-3 col-lg-2">
@@ -181,7 +183,7 @@
         </section>
 
         <!--Visual Design-->
-        <section class="block">
+        <section data-aos="fade-in" class="block">
             <h2><span>Visual Design</span></h2>
             <div class="text">
                 <div class="col-xs-12 col-md-3 col-lg-2">
@@ -210,7 +212,7 @@
         </section>
 
         <!--Final Product-->
-        <section class="block">
+        <section data-aos="fade-in" class="block">
             <h2><span>Final Product</span></h2>
             <div>
                 <h3>Onboarding</h3>
@@ -278,7 +280,7 @@
             <div id="footer">
                 <div class="footer-content">
                     <div>
-                        <p>Designed & coded by Hailey Luong</p>
+                        <p>Designed & coded by me!</p>
                     </div>
                     <div>
                         <div class="footer-links">
@@ -295,12 +297,6 @@
                                         <i class="fab fa-linkedin-in"></i>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="https://github.com/hailey-luong" target="_blank">
-                                        <div class="icon"></div>
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
@@ -308,8 +304,20 @@
             </div>
         </footer>
 
+        <div class="overlay">
+            <div class="popup">
+                <h1>Mobile version still under development</h1>
+                <p>I'm still working on this! For the time being, please switch to a device with a larger screen size.
+                    Thanks!</p>
+            </div>
+        </div>
+
         <!-- js links -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="js/script.js"></script>
 </body>
 

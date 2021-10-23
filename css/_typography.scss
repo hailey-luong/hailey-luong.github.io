@@ -9,7 +9,7 @@ html {
 }
 
 html {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     color: $primary;
 }
 
@@ -18,64 +18,66 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h4 {
+    font-family: 'Syne', sans-serif;
+}
+
 p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 0.875em;
-    font-weight: 400;
-    line-height: 1.875em;
+    letter-spacing: 0.0125em;
+    font-weight: 300;
+    line-height: 2em;
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
     strong {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
+        font-weight: 600;
     }
 }
 
-.mobile-message {
-    visibility: hidden;
-    @media screen and (max-width: $mobile) {
-        visibility: visible;
-    }
-}
 
 h1 {
-    font-weight: 100;
-    font-size: 6em;
+    font-weight: 800;
+    font-size: 5em;
     margin-left: -0.5rem;
     margin-top: 8rem;
     @media screen and (max-width: $desktop) {
-        font-size: 5em;
+        font-size: 4em;
     }
     @media screen and (max-width: $laptop) {
-        font-size: 3.5em;
-        margin-top: 6rem;
+        font-size: 3em;
+        margin-left: 0rem;
+    }
+    @media screen and (max-width: $tablet) {
+        font-size: 2.5em;
     }
     @media screen and (max-width: $mobile) {
-        font-size: 2.5em;
+        font-size: 2em;
         margin-top: 6rem;
     }
 }
 
 h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    font-size: 2em;
+    font-weight: 800;
+    font-size: 1.75em;
+    text-transform: uppercase;
     margin-top: 2rem;
-    margin-bottom: 2.5em;
-    letter-spacing: 0.025em;
+    margin-bottom: 2em;
+    letter-spacing: 0.05em;
     line-height: 0.1em;
     width: 100%;
     border-bottom: 1px solid $primary;
-    @media screen and (max-width: $laptop) {
-        margin-top: 1.5rem;
-        margin-bottom: 1.5em;
+    @media screen and (max-width: $desktop) {
+        margin-top: 2rem;
+        margin-bottom: 2em;
     }
     @media screen and (max-width: $laptop) {
-        margin-top: 1rem;
-        margin-bottom: 1em;
+        margin-top: 4rem;
+        margin-bottom: 1.5em;
+        font-size: 1.5em;
     }
     @media screen and (max-width: $mobile) {
-        font-size: 1.5em;
+        margin-top: 3rem;
+        font-size: 1.25em;
     }
 }
 
@@ -85,7 +87,7 @@ h2 span {
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lexend', sans-serif;
     text-transform: uppercase;
     font-size: 0.875em;
     font-weight: 700;
@@ -103,17 +105,18 @@ h4 {
     font-size: 1.5em;
     color: $white;
     letter-spacing: 0.05em;
-    font-weight: 300;
+    font-weight: 700;
     display: inline;
 }
 
 h5 {
-    font-size: 2em;
+    font-family: 'Lexend', sans-serif;
+    font-size: 1.75em;
     font-weight: 200;
-    letter-spacing: 0.0125em;
-    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    line-height: 1.625em;
     margin-top: 0em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     @media screen and (max-width: $desktop) {
         font-size: 1.75em;
     }
@@ -121,24 +124,29 @@ h5 {
         font-size: 1.25em;
     }
     b {
-        font-weight: 400;
+        font-family: 'Syne', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0em;
+        font-size: 1.125em;
     }
 }
 
 .card {
     color: $primary;
     h1 {
-        font-size: 3.5em;
+        font-size: 2em;
         margin-left: -0.1rem;
-        margin-bottom: 0.75rem;
-        margin-top: 0;
+        margin-bottom: 0.25rem;
+        margin-top: 0.325em;
         white-space: nowrap;
         @media screen and (max-width: $desktop) {
-            font-size: 2.75em;
+            font-size: 1.625em;
+        }
+        @media screen and (max-width: $tablet) {
+            font-size: 1.75em;
         }
         @media screen and (max-width: $mobile) {
-            font-size: 2.5em;
-            margin-bottom: 0;
+            font-size: 2em;
         }
     }
 }

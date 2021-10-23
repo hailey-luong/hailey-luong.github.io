@@ -11,6 +11,21 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 
+// cursor
+
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+  cursor.setAttribute("style","top: "+(e.clientY-6)+"px; left: "+(e.clientX-6)+"px")
+})
+
+document.addEventListener('click', () => {
+  cursor.classList.add("expand");
+
+  setTimeout (() => {
+    cursor.classList.remove("expand");
+  }, 500)
+})
+
 // show images on scroll (from CSS Animation on YouTube)
 
 var scroll = window.requestAnimationFrame ||
@@ -56,7 +71,7 @@ function isElementInViewport(el) {
 const tiltEffectSettings = {
     max: 1.5,
     perspective: 1000,
-    scale: 1.02,
+    scale: 1.03,
     speed: 1000,
     easing: "cubic-bezier(.03,.98,.52,.99)"
   };
