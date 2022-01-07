@@ -239,6 +239,7 @@ html, body {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow-x: hidden;
 }
 
 html {
@@ -748,6 +749,8 @@ a:hover .cursor {
 @media screen and (max-width: 500px) {
   .nav-content, .footer-content {
     width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -773,7 +776,6 @@ a:hover .cursor {
 
 @media screen and (max-width: 768px) {
   .nav-links a, .footer-links a {
-    margin-right: 2rem;
     font-size: 1em;
   }
 }

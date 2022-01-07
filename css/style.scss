@@ -13,6 +13,7 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
+    overflow-x:hidden;
 }
 
 html {
@@ -422,6 +423,8 @@ section {
     }
     @media screen and (max-width: $mobile) {
         width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -442,7 +445,6 @@ section {
         padding: 0;
         margin: 0 3rem 0 0;
         @media screen and (max-width: $tablet) {
-            margin-right: 2rem;
             font-size: 1em;
         }
     }
