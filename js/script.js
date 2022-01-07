@@ -68,7 +68,7 @@ function isElementInViewport(el) {
 
 // card tilt on hover (tutorial from Coding Journey on YouTube)
 
-const tiltEffectSettings = {
+/* const tiltEffectSettings = {
     max: 1.5,
     perspective: 1000,
     scale: 1.03,
@@ -119,4 +119,4 @@ const tiltEffectSettings = {
     card.transitionTimeoutId = setTimeout(() => {
       card.style.transition = "";
     }, tiltEffectSettings.speed);
-  } 
+  }  */

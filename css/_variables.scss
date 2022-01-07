@@ -1,12 +1,17 @@
-/* Colours */
+//* Colours
 
 $primary: #4E625E;
 $primary-alt: #94bd00;
+$primary-dark: hsl(170, 12%, 30%);
 $secondary: #EFECE8;
 $secondary-alt: #d8ff4a;
-$white: #FAF9F9;
+$white: #FFFFFF; //* #FAF9F9
+$highlight: #f2fdc98a;
 
-/* Cards */
+$link: #7c71b9;
+$link-hover: #483a97;
+
+//* Cards
 
 $ovopy: #faebcc;
 $ovopy-alt: #ffa42c;
@@ -17,7 +22,7 @@ $regent-alt: #ff7d4a;
 $discovergaming: #e2f2fa;
 $discovergaming-alt: #507fff;
 
-/* Breakpoints */
+//* Breakpoints
 
 $desktop: 1200px;
 $laptop: 992px;

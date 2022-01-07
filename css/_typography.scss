@@ -14,11 +14,11 @@ html {
 }
 
 a {
-    color: #4C74B9;
+    color: $link;
     text-decoration: none;
 }
 
-h1, h2, h4 {
+h1, h4, h6 {
     font-family: 'Syne', sans-serif;
 }
 
@@ -26,22 +26,22 @@ p {
     font-size: 0.875em;
     letter-spacing: 0.0125em;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 1.875em;
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
     strong {
         font-weight: 600;
+        color: $primary-dark;
     }
 }
 
 
 h1 {
     font-weight: 800;
-    font-size: 5em;
-    margin-left: -0.5rem;
-    margin-top: 8rem;
+    font-size: 3.5em;
+    margin-top: -1rem;
     @media screen and (max-width: $desktop) {
-        font-size: 4em;
+        font-size: 3.25em;
     }
     @media screen and (max-width: $laptop) {
         font-size: 3em;
@@ -52,22 +52,22 @@ h1 {
     }
     @media screen and (max-width: $mobile) {
         font-size: 2em;
-        margin-top: 6rem;
+        margin-top: -2rem;
     }
 }
 
 h2 {
-    font-weight: 800;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
     font-size: 1.75em;
-    text-transform: uppercase;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2em;
     letter-spacing: 0.05em;
     line-height: 0.1em;
     width: 100%;
     border-bottom: 1px solid $primary;
     @media screen and (max-width: $desktop) {
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-bottom: 2em;
     }
     @media screen and (max-width: $laptop) {
@@ -87,12 +87,12 @@ h2 span {
 }
 
 h3 {
-    font-family: 'Lexend', sans-serif;
+    line-height: 2em;
     text-transform: uppercase;
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 700;
     letter-spacing: 0.075em;
-    margin-bottom: 0;
+    margin-bottom: 0.75em;
 }
 
 .about-right {
@@ -107,27 +107,45 @@ h4 {
     letter-spacing: 0.05em;
     font-weight: 700;
     display: inline;
+    @media screen and (max-width: $mobile) {
+        font-size: 1.25em;
+    }
 }
 
 h5 {
     font-family: 'Lexend', sans-serif;
-    font-size: 1.75em;
+    font-size: 1.5em;
     font-weight: 200;
     letter-spacing: 0.05em;
     line-height: 1.625em;
-    margin-top: 0em;
-    margin-bottom: 1em;
-    @media screen and (max-width: $desktop) {
-        font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    @media screen and (max-width: $tablet) {
+        font-size: 1.25em;
     }
     @media screen and (max-width: $mobile) {
-        font-size: 1.25em;
+        font-size: 1em;
     }
     b {
         font-family: 'Syne', sans-serif;
         font-weight: 600;
         letter-spacing: 0em;
         font-size: 1.125em;
+    }
+}
+
+h6 {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+li {
+    font-size: 0.875em;
+    margin-left: -1rem;
+    margin-bottom: 0.5rem;
+    strong {
+        font-weight: 600;
+        color: $primary-dark;
     }
 }
 
@@ -146,7 +164,21 @@ h5 {
             font-size: 1.75em;
         }
         @media screen and (max-width: $mobile) {
-            font-size: 2em;
+            font-size: 1.5em;
         }
     }
 }
+
+.text {
+    p {
+        padding: 0.0825em;
+    }
+}
+
+::-moz-selection { /* Code for Firefox */
+    background: $highlight;
+  }
+  
+  ::selection {
+    background: $highlight;
+  }

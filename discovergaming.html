@@ -10,7 +10,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lexend:wght@100;300;400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lexend:wght@100;300;400;700&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <link href="css/flexboxgrid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -32,16 +34,18 @@
             <div>
                 <div class="nav-links">
                     <ul>
-                        <li>
-                            <a href="mailto: luong.hailey@gmail.com">
-                                <div class="icon"></div>
-                                <i class="fas fa-envelope"></i>
+                        <li class="nav-hide">
+                            <a href="files/HaileyLuong_Resume.pdf" target="_blank">
+                                Résumé
+                            </a>
+                        </li><li>
+                            <a href="about.html">
+                                About
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/haileyluong/" target="_blank">
-                                <div class="icon"></div>
-                                <i class="fab fa-linkedin-in"></i>
+                            <a href="mailto: luong.hailey@gmail.com">
+                                Contact
                             </a>
                         </li>
                     </ul>
@@ -53,24 +57,31 @@
     <!--cursor-->
     <div class="cursor"></div>
 
+    <div class="banner-div">
+        <img src="images/discovergaming/banner.png" alt="Blue background" class="banner show-on-scroll">
+        <img src="images/discovergaming/banner-img.png" alt="Three screens from the app" class="banner-img show-on-scroll">
+    </div>
+
     <section class="block">
 
-        <h1>DiscoverGaming</h1>
+        <h1 data-aos="zoom-in-right">DiscoverGaming</h1>
         <h2><span>Overview</span></h2>
         <div class="row about">
             <div class="col-sm-12 col-md-8">
-                <h5>Our team designed and prototyped DiscoverGaming, an app concept that placed as a top ten finalist in
-                    the Adobe & Activision Creative Jam, a UX design challenge with over 700 participants. </h5>
+                <h5>An app concept aimed to introduce seniors to gaming, our team designed and prototyped DiscoverGaming, which placed as a top ten finalist in
+                    the Adobe + Activision Creative Jam.</h5>
 
-                <p>At the beginning, each teammate led one major section at the beginning, and my main focus was the
-                    <strong>gamified activities.</strong> However, we all collaborated to develop the app concept,
-                    create a cohesive brand, arrange the page layouts, and prototype the experience.</p>
+                <p>Each teammate began by leading one major section—my main focus being the
+                    <strong>gamified activities,</strong> but we all worked together as a team to finalize each section.
+                    We collaborated to develop the app concept,
+                    create a cohesive brand, arrange the page layouts, and prototype the experience.
+                </p>
             </div>
 
             <div class="about-right col-sm-12 col-md-4">
                 <div class="col-xs-6 col-sm-4 col-md-12">
                     <h3>Type</h3>
-                    <p>Prototyping / Adobe Jam</p>
+                    <p>Prototyping / Adobe Jam Finalist</p>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-12">
                     <h3>Timeline</h3>
@@ -78,14 +89,17 @@
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-12">
                     <h3>Team Members</h3>
-                    <p><a href="https://www.seanreibling.com/" target="_blank">Sean Reibling</a> &
-                        <a href="https://www.behance.net/Justin_chiu" target="_blank">Justin Chiu</a>
-                    </p>
-                    </p>
+                    <p>Hailey Luong (me)</p>
+                    <a href="https://www.seanreibling.com/" target="_blank">
+                        <p>Sean Reibling<i class="fas fa-arrow-right arrow-hover"></i></p>
+                    </a>
+                    <a href="https://www.justinchiu.design/" target="_blank">
+                        <p>Justin Chiu<i class="fas fa-arrow-right arrow-hover"></i></p>
+                    </a>
                 </div>
                 <div class="col-xs-6 col-sm-4 col-md-12">
                     <h3>Tools</h3>
-                    <p>Adobe XD</p>
+                    <p>Photoshop / Illustrator / XD</p>
                 </div>
             </div>
         </div>
@@ -94,7 +108,7 @@
     <section class="block">
         <div class="text-col">
             <div>
-                <img src="images/discovergaming/cover.png" alt="Hero image" class="img show-on-scroll">
+                <img src="images/discovergaming/cover.png" alt="Main image" class="img show-on-scroll">
             </div>
             <div>
                 <h3>Challenge</h3>
@@ -103,21 +117,30 @@
                     design an engaging and intuitive experience to introduce seniors to the world of video games</p>
 
                 <h3>Solution</h3>
-                <p>Our mobile application presents a personalized selection of games based on the user’s preferences and
-                    abilities, which are captured through a series of activities and multiple-choice questions. All game
-                    recommendations are multiplayer, encouraging social interaction with friends and family. A host of
-                    other features, such as shared schedules and achievements, create a highly engaging user experience.
+                <p>Our application presents a personalized selection of games based on the user’s preferences and
+                    abilities, captured through a series of activities and multiple-choice questions. All game
+                    recommendations are multiplayer to encourage social interaction with friends and family.
                     We believe gaming should be for everyone, and DiscoverGaming helps reach a largely underserved
-                    demographic in the gaming industry.
+                    demographic in the industry.
                 </p>
             </div>
         </div>
     </section>
 
+    <!--App Prototype-->
     <section class="block">
         <h2><span>Final Product</span></h2>
 
-        <img class="img show-on-scroll" src="images/discovergaming/overview.gif" alt="Overview of frames">
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Scheduling</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>The application includes a simple event planning system that facilitates social connection with
+                    friends and family.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/discovergaming/schedule.png" alt="Social event scheduling">
 
         <div class="text">
             <div class="col-xs-12 col-md-3 col-lg-2">
@@ -144,7 +167,7 @@
             </div>
             <div class="col-xs-12 col-md-9">
                 <p>Users are inquired about their preferences and skills they are seeking to develop. Regardless of
-                    interests and skills, our app strives to match every individual with the perfect game!</p>
+                    interests and skills, our app strives to match every individual with the perfect game.</p>
             </div>
         </div>
         <div style="padding:75.2% 0 0 0;position:relative;" class="iframe-container">
@@ -158,18 +181,162 @@
 
         <div class="text">
             <div class="col-xs-12 col-md-3 col-lg-2">
-                <h3>Scheduling</h3>
+                <h3>Game Library</h3>
             </div>
             <div class="col-xs-12 col-md-9">
-                <p>The application includes a simple event planning system that facilitates social connection with friends and family.</p>
+                <p>Based on the survey and quiz results, the app offers personalized recommendations. The user is
+                    presented with a basic overview of each game, and they have the option to add it to their library
+                    for future viewing.</p>
             </div>
         </div>
-        <img class="img show-on-scroll" src="images/discovergaming/schedule.png" alt="Social event scheduling">
+        <img class="img show-on-scroll" src="images/discovergaming/games.gif" alt="Social event scheduling">
+
     </section>
 
-    <section class="block">
-        <h2><span>Live Prototype</span></h2>
-        <iframe class="iframe tall" width="1024" height="768" src="https://xd.adobe.com/embed/b77fac9c-3514-4f01-8351-38d767a9f98b-e22c/" frameborder="0" allowfullscreen></iframe>
+    <!--Process-->
+
+    <section data-aos="fade-in" class="block">
+        <h2><span>Process</span></h2>
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Timeline</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>We began by reading <a
+                        href="https://static1.squarespace.com/static/5d6f4ae0c4bc9a00013d2a67/t/603fe0588220a635734faab9/1614798936680/ATV+Project+Details+Brief.pdf"
+                        target="_blank">the project brief</a>, which tasked us with developing an app experience for
+                    exploring video games as an avenue to connect with friends and family. As we worked with an
+                    extremely tight deadline, we deconstructed the process into various segments per day:</p>
+
+            </div>
+        </div>
+
+        <!--Timeline cards-->
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Day 1</strong></p>
+                        <p>Idea generation and branding components.</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Day 2</strong></p>
+                        <p>Designing and prototyping the app experience.</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Day 3</strong></p>
+                        <p>Transitions and final revisions.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Sections</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Deciding to present a personalized selection of games captured from the user’s preferences and
+                    abilities, we developed a series of skill-testing activities and multiple-choice questions. Below is
+                    an overview of the various frames we created.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/discovergaming/overview.gif" alt="Overview of frames">
+    </section>
+
+    <!--Process-->
+
+    <section data-aos="fade-in" class="block">
+        <h2><span>Design System</span></h2>
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Colours</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>With the target demographic being seniors, this app was designed to prioritize legibility and
+                    accessibility. This was achieved by including bold, high-contrast colours.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/discovergaming/colours.png" alt="Colour scheme">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Typography</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>We ensured that all the text was fairly large, and decided on Open Sans as the typeface. The simple
+                    type pairing with the big font size ensured that all copy was readable for users any age.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/discovergaming/typography.png" alt="Typography styles: Open Sans">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Components</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Paired with the typography and colour styles, large and distinct components were included throughout
+                    the app. Clickable buttons make use of drop shadows to imply affordance and rounded corners create a
+                    more friendly experience.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/discovergaming/components.png" alt="Components and buttons">
+
+    </section>
+
+    <!--Takeaways-->
+    <section data-aos="fade-in" class="block takeaways">
+        <h2><span>What I Learned</span></h2>
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Time Management</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>As a 48-hour challenge, our team was limited to an extremely tight timeline. To develop a rough
+                    schedule, we deconstructed the process into various segments per day—the first for idea generation
+                    and producing branding components, the second for designing and prototyping, and the third for
+                    transitions and final revisions. The initial planning allowed us to solidify our direction and
+                    prioritize our tasks.</p>
+
+            </div>
+        </div>
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Simplicity</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>With consideration to our demographic of seniors, we produced branding elements and interactions that
+                    could be easily understood. We realized that we did not have to sacrifice visual appeal to produce
+                    an experience suitable for any user.</p>
+            </div>
+        </div>
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Team Work</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Although we were each in charge of one portion, we continuously checked in with the other teammates
+                    and offered assistance as needed. Our open communication allowed us to highlight the strengths of
+                    each member and maintain a cohesive visual experience. The prototype development was a flexible
+                    process that adapted as it moved forward.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/discovergaming/screens.png"
+            alt="A set of screens from the mobile app">
+
+        <div>
+            <a href="index.html">
+                <p><i class="fas fa-arrow-left arrow-hover-left"></i>Return to Homepage</p>
+            </a>
+        </div>
     </section>
 
     <footer>
@@ -203,7 +370,8 @@
     <div class="overlay">
         <div class="popup">
             <h1>Mobile version still under development</h1>
-            <p>I'm still working on this! For the time being, please switch to a device with a larger screen size. Thanks!</p>
+            <p>I'm still working on this! For the time being, please switch to a device with a larger screen size.
+                Thanks!</p>
         </div>
     </div>
 
