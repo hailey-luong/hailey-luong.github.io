@@ -163,8 +163,8 @@ display: -webkit-flexbox;
 
 .intro {
     width: 70%;
-    margin-top: 12rem;
-    margin-bottom: 2rem;
+    margin-top: 14rem;
+    margin-bottom: 3rem;
     @media screen and (max-width: 1500px) {
         width: 75%;
         margin-left: 3rem;
@@ -172,7 +172,7 @@ display: -webkit-flexbox;
     }
     @media screen and (max-width: $desktop) {
         margin-left: 2rem;
-        margin-top: 10rem;
+        margin-top: 12rem;
     }
     @media screen and (max-width: $laptop) {
         margin-left: 0rem;
@@ -378,15 +378,16 @@ section {
 #navbar {
     position: fixed;
     transition: top 0.75s;
+    background-color: $primary;
 }
 
 #navbar, #footer {
-    background-color: $primary;
-    width: 100vw;
     height: 5rem;
     padding: 0.125rem 0;
     z-index: 10;
     display: block;
+    width: 100vw;
+    margin-left: 0;
 }
 
 .nav-content, .footer-content {
@@ -420,8 +421,7 @@ section {
         margin-right: 2rem;
     }
     @media screen and (max-width: $mobile) {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        width: 100%;
     }
 }
 
@@ -487,6 +487,8 @@ section {
 #footer {
     background-color: $secondary;
     margin-top: 6rem;
+    padding-left: 1rem;
+
     p {
         margin: 0;
         @media screen and (max-width: $mobile) {
@@ -900,11 +902,15 @@ footer {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 
-    @media screen and (max-width: $tablet) {
+
+    @media not all and (min-resolution:.001dpcm) { 
+        @supports (-webkit-appearance:none) {
         flex-direction: column;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
+        }   
     }
+    
     .img {
         margin: 1rem 0 0 -1rem;
         width: 100%;

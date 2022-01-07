@@ -69,13 +69,13 @@ h1 {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin-top: -2rem;
   }
 }
@@ -104,6 +104,7 @@ h2 {
     margin-top: 4rem;
     margin-bottom: 1.5em;
     font-size: 1.5em;
+    letter-spacing: 0.025em;
   }
 }
 
@@ -159,12 +160,6 @@ h5 {
 @media screen and (max-width: 768px) {
   h5 {
     font-size: 1.25em;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h5 {
-    font-size: 1em;
   }
 }
 
@@ -416,8 +411,8 @@ a:hover .cursor {
 
 .intro {
   width: 70%;
-  margin-top: 12rem;
-  margin-bottom: 2rem;
+  margin-top: 14rem;
+  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -431,7 +426,7 @@ a:hover .cursor {
 @media screen and (max-width: 1200px) {
   .intro {
     margin-left: 2rem;
-    margin-top: 10rem;
+    margin-top: 12rem;
   }
 }
 
@@ -696,15 +691,16 @@ a:hover .cursor {
   position: fixed;
   -webkit-transition: top 0.75s;
   transition: top 0.75s;
+  background-color: #4E625E;
 }
 
 #navbar, #footer {
-  background-color: #4E625E;
-  width: 100vw;
   height: 5rem;
   padding: 0.125rem 0;
   z-index: 10;
   display: block;
+  width: 100vw;
+  margin-left: 0;
 }
 
 .nav-content, .footer-content {
@@ -751,8 +747,7 @@ a:hover .cursor {
 
 @media screen and (max-width: 500px) {
   .nav-content, .footer-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 100%;
   }
 }
 
@@ -825,6 +820,7 @@ a:hover .cursor {
 #footer {
   background-color: #EFECE8;
   margin-top: 6rem;
+  padding-left: 1rem;
 }
 
 #footer p {
@@ -1337,12 +1333,14 @@ footer {
   margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-  .container-fluid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
-    -ms-flex-direction: column;
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .container-fluid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      -ms-flex-direction: column;
+    }
   }
 }
 
