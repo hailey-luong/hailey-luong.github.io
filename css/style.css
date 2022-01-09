@@ -34,13 +34,16 @@ h1, h4, h6 {
   font-family: 'Syne', sans-serif;
 }
 
-p {
+p, h2 {
   font-size: 0.875em;
   letter-spacing: 0.0125em;
   font-weight: 300;
-  line-height: 1.875em;
+}
+
+p {
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
+  line-height: 1.875em;
 }
 
 p strong {
@@ -49,7 +52,7 @@ p strong {
 }
 
 h1 {
-  font-weight: 800;
+  font-weight: 600;
   font-size: 3.5em;
   margin-top: -1rem;
 }
@@ -81,29 +84,17 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lexend', sans-serif;
-  font-weight: 300;
-  font-size: 1.75em;
-  margin-top: 4rem;
-  margin-bottom: 2em;
-  letter-spacing: 0.05em;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  letter-spacing: 0.01em;
   line-height: 0.1em;
   width: 100%;
   border-bottom: 1px solid #4E625E;
 }
 
-@media screen and (max-width: 1200px) {
-  h2 {
-    margin-top: 4rem;
-    margin-bottom: 2em;
-  }
-}
-
 @media screen and (max-width: 992px) {
   h2 {
-    margin-top: 4rem;
-    margin-bottom: 1.5em;
-    font-size: 1.5em;
+    margin-bottom: 3em;
     letter-spacing: 0.025em;
   }
 }
@@ -111,7 +102,6 @@ h2 {
 @media screen and (max-width: 500px) {
   h2 {
     margin-top: 3rem;
-    font-size: 1.25em;
   }
 }
 
@@ -121,6 +111,7 @@ h2 span {
 }
 
 h3 {
+  font-family: 'Lexend', sans-serif;
   line-height: 2em;
   text-transform: uppercase;
   font-size: 0.75em;
@@ -150,16 +141,18 @@ h4 {
 h5 {
   font-family: 'Lexend', sans-serif;
   font-size: 1.5em;
-  font-weight: 200;
-  letter-spacing: 0.05em;
+  font-weight: 100;
+  letter-spacing: 0.04em;
   line-height: 1.625em;
   margin-top: 0;
   margin-bottom: 2rem;
+  color: #435653;
 }
 
 @media screen and (max-width: 768px) {
   h5 {
-    font-size: 1.25em;
+    font-weight: 200;
+    letter-spacing: 0.02em;
   }
 }
 
@@ -412,8 +405,8 @@ a:hover .cursor {
 
 .intro {
   width: 70%;
-  margin-top: 14rem;
-  margin-bottom: 3rem;
+  margin-top: 16rem;
+  margin-bottom: 0rem;
 }
 
 @media screen and (max-width: 1500px) {
@@ -450,10 +443,20 @@ a:hover .cursor {
   }
 }
 
+.intro-link {
+  margin-top: 0.5em;
+}
+
+.intro-link .arrow-hover {
+  font-size: 0.75em;
+  margin-left: 0.75rem;
+  vertical-align: middle;
+}
+
 .landing {
   font-size: 1rem;
   padding: 0;
-  margin: 0;
+  margin: 6rem 0 2rem 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -516,10 +519,12 @@ a:hover .cursor {
 
 .card p {
   line-height: 1.5em;
+  margin-top: 1em;
 }
 
 .card h3 {
   line-height: 1.75em;
+  margin-bottom: -1em;
 }
 
 .cardtext {
@@ -566,7 +571,7 @@ a:hover .cursor {
   -moz-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  font-size: 0.825em;
+  font-size: 1.25em;
 }
 
 .arrow {
@@ -587,7 +592,8 @@ a:hover .cursor {
 }
 
 .arrow i {
-  margin-top: 0.5rem;
+  vertical-align: middle;
+  margin-top: 0.75rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -608,10 +614,6 @@ a:hover .cursor {
 
 .arrow-hover-left {
   margin-right: .5rem;
-}
-
-.big-arrow {
-  font-size: 0.825em;
 }
 
 .card:hover {
@@ -1006,13 +1008,13 @@ a:hover .cursor {
 }
 
 .block a:hover .arrow-hover {
-  margin-left: 1rem;
+  margin-left: 1.25rem;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
 .block a:hover .arrow-hover-left {
-  margin-right: 1rem;
+  margin-right: 1.25rem;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }

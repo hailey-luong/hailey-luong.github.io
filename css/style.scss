@@ -164,8 +164,8 @@ display: -webkit-flexbox;
 
 .intro {
     width: 70%;
-    margin-top: 14rem;
-    margin-bottom: 3rem;
+    margin-top: 16rem;
+    margin-bottom: 0rem;
     @media screen and (max-width: 1500px) {
         width: 75%;
         margin-left: 3rem;
@@ -187,13 +187,22 @@ display: -webkit-flexbox;
     }
 }
 
+.intro-link {
+    margin-top: 0.5em;
+    .arrow-hover {
+        font-size: 0.75em;
+        margin-left: 0.75rem;
+        vertical-align: middle;
+    }
+}
+
 .landing {
     font-size: 1rem;
     @media screen and (max-width: $laptop) {
         font-size: 0.9rem;
     }
     padding: 0;
-    margin: 0;
+    margin: 6rem 0 2rem 0;
 }
 
 .one-rem {
@@ -238,9 +247,11 @@ display: -webkit-flexbox;
     transition: all .4s ease-in-out; 
     p {
         line-height: 1.5em;
+        margin-top: 1em;
     }
     h3 {
         line-height: 1.75em;
+        margin-bottom: -1em;
     }
 }
 
@@ -278,7 +289,7 @@ display: -webkit-flexbox;
         -moz-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
-        font-size: 0.825em;
+        font-size: 1.25em;
     }
 }
 
@@ -293,7 +304,8 @@ display: -webkit-flexbox;
         margin-top: 0.5rem;
     }
     i {
-        margin-top: 0.5rem;
+        vertical-align: middle;
+        margin-top: 0.75rem;
         @media screen and (max-width: $laptop) {
             margin-top: 0.275rem;
         }
@@ -309,10 +321,6 @@ display: -webkit-flexbox;
 
 .arrow-hover-left {
     margin-right: .5rem;
-}
-
-.big-arrow {
-    font-size: 0.825em;
 }
 
 .card:hover {
@@ -618,11 +626,11 @@ section {
     }
     a:hover {
         .arrow-hover {
-            margin-left: 1rem;
+            margin-left: 1.25rem;
             transition: all ease 0.3s;
         }
         .arrow-hover-left {
-            margin-right: 1rem;
+            margin-right: 1.25rem;
             transition: all ease 0.3s;
         }
     }

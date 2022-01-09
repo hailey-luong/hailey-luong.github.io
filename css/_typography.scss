@@ -22,13 +22,15 @@ h1, h4, h6 {
     font-family: 'Syne', sans-serif;
 }
 
-p {
+p, h2 {
     font-size: 0.875em;
     letter-spacing: 0.0125em;
     font-weight: 300;
-    line-height: 1.875em;
+}
+p {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
+    line-height: 1.875em;
     strong {
         font-weight: 600;
         color: $primary-dark;
@@ -37,7 +39,7 @@ p {
 
 
 h1 {
-    font-weight: 800;
+    font-weight: 600;
     font-size: 3.5em;
     margin-top: -1rem;
     @media screen and (max-width: $desktop) {
@@ -57,28 +59,18 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lexend', sans-serif;
-    font-weight: 300;
-    font-size: 1.75em;
-    margin-top: 4rem;
-    margin-bottom: 2em;
-    letter-spacing: 0.05em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    letter-spacing: 0.01em;
     line-height: 0.1em;
     width: 100%;
     border-bottom: 1px solid $primary;
-    @media screen and (max-width: $desktop) {
-        margin-top: 4rem;
-        margin-bottom: 2em;
-    }
     @media screen and (max-width: $laptop) {
-        margin-top: 4rem;
-        margin-bottom: 1.5em;
-        font-size: 1.5em;
+        margin-bottom: 3em;
         letter-spacing: 0.025em;
     }
     @media screen and (max-width: $mobile) {
         margin-top: 3rem;
-        font-size: 1.25em;
     }
 }
 
@@ -88,6 +80,7 @@ h2 span {
 }
 
 h3 {
+    font-family: 'Lexend', sans-serif;
     line-height: 2em;
     text-transform: uppercase;
     font-size: 0.75em;
@@ -116,13 +109,15 @@ h4 {
 h5 {
     font-family: 'Lexend', sans-serif;
     font-size: 1.5em;
-    font-weight: 200;
-    letter-spacing: 0.05em;
+    font-weight: 100;
+    letter-spacing: 0.04em;
     line-height: 1.625em;
     margin-top: 0;
     margin-bottom: 2rem;
+    color: $primary-dark;
     @media screen and (max-width: $tablet) {
-        font-size: 1.25em;
+        font-weight: 200;
+        letter-spacing: 0.02em;
     }
     b {
         font-family: 'Syne', sans-serif;
