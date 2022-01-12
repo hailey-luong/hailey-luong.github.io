@@ -215,11 +215,11 @@ li strong {
 
 ::-moz-selection {
   /* Code for Firefox */
-  background: #f2fdc98a;
+  background: #f2fdc9;
 }
 
 ::selection {
-  background: #f2fdc98a;
+  background: #f2fdc9;
 }
 
 html, body {
@@ -239,26 +239,6 @@ html {
   position: relative;
 }
 
-/* body {
-    cursor: none;
-} */
-/* .cursor {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: $primary-alt;
-    pointer-events: none;
-    z-index: 11;
-    mix-blend-mode: multiply;
-} */
-/* a:hover {
-    cursor: none;
-}
-
-a:hover .cursor {
-    transform: scale (2);
-} */
 .flex-container:before {
   display: inline;
 }
@@ -405,21 +385,19 @@ a:hover .cursor {
 
 .intro {
   width: 70%;
-  margin-top: 16rem;
-  margin-bottom: 0rem;
+  margin-top: 15rem;
+  margin-bottom: -1rem;
 }
 
 @media screen and (max-width: 1500px) {
   .intro {
     width: 75%;
-    margin-left: 3rem;
     margin-top: 12rem;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .intro {
-    margin-left: 2rem;
     margin-top: 12rem;
   }
 }
@@ -456,12 +434,19 @@ a:hover .cursor {
 .landing {
   font-size: 1rem;
   padding: 0;
-  margin: 6rem 0 2rem 0;
+  margin-top: 6rem;
 }
 
 @media screen and (max-width: 992px) {
   .landing {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing {
+    margin-left: 0rem;
+    margin-bottom: -1rem;
   }
 }
 
@@ -706,6 +691,20 @@ a:hover .cursor {
   margin-left: 0;
 }
 
+.nav-down {
+  background: #f5b335;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out;
+  width: 100%;
+}
+
+.nav-up {
+  top: -100px;
+}
+
 .nav-content, .footer-content {
   height: 100%;
   max-width: 992px;
@@ -809,6 +808,10 @@ a:hover .cursor {
     margin-top: 1.625rem;
     padding-top: 0;
   }
+}
+
+.nav-links .nav-active, .footer-links .nav-active {
+  color: #d8ff4a;
 }
 
 .nav-content a, .nav-content li {
@@ -1339,11 +1342,13 @@ footer {
 
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
-    .container-fluid {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-              flex-direction: column;
-      -ms-flex-direction: column;
+    @media screen and (max-width: 768px) {
+      .container-fluid {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -ms-flex-direction: column;
+      }
     }
   }
 }

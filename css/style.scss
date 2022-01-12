@@ -20,29 +20,6 @@ html {
     position: relative;
 }
 
-/* body {
-    cursor: none;
-} */
-
-/* .cursor {
-    position: fixed;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: $primary-alt;
-    pointer-events: none;
-    z-index: 11;
-    mix-blend-mode: multiply;
-} */
-
-/* a:hover {
-    cursor: none;
-}
-
-a:hover .cursor {
-    transform: scale (2);
-} */
-
 .flex-container:before {
     display: inline;
   }
@@ -164,15 +141,13 @@ display: -webkit-flexbox;
 
 .intro {
     width: 70%;
-    margin-top: 16rem;
-    margin-bottom: 0rem;
+    margin-top: 15rem;
+    margin-bottom: -1rem;
     @media screen and (max-width: 1500px) {
         width: 75%;
-        margin-left: 3rem;
         margin-top: 12rem;
     }
     @media screen and (max-width: $desktop) {
-        margin-left: 2rem;
         margin-top: 12rem;
     }
     @media screen and (max-width: $laptop) {
@@ -198,11 +173,15 @@ display: -webkit-flexbox;
 
 .landing {
     font-size: 1rem;
+    padding: 0;
+    margin-top: 6rem;
     @media screen and (max-width: $laptop) {
         font-size: 0.9rem;
     }
-    padding: 0;
-    margin: 6rem 0 2rem 0;
+    @media screen and (max-width: $tablet) {
+        margin-left: 0rem;
+        margin-bottom: -1rem;
+    }
 }
 
 .one-rem {
@@ -399,6 +378,19 @@ section {
     margin-left: 0;
 }
 
+.nav-down {
+    background: #f5b335;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.15s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -100px;
+}
+
 .nav-content, .footer-content {
     height: 100%;
     max-width: $laptop;
@@ -479,6 +471,9 @@ section {
             margin-top: 1.625rem;
             padding-top: 0;
         }
+    }
+    .nav-active {
+        color: $secondary-alt;
     }
 }
 
@@ -915,10 +910,12 @@ footer {
 
     @media not all and (min-resolution:.001dpcm) { 
         @supports (-webkit-appearance:none) {
+        @media screen and (max-width: $tablet) {
         flex-direction: column;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
-        }   
+            }   
+        }
     }
     
     .img {
