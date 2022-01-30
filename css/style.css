@@ -26,7 +26,7 @@ html {
 }
 
 a {
-  color: #7c71b9;
+  color: #796dbb;
   text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ p {
 
 p strong {
   font-weight: 600;
-  color: #395b5b;
+  color: #487070;
 }
 
 h1 {
@@ -146,7 +146,7 @@ h5 {
   line-height: 1.625em;
   margin-top: 0;
   margin-bottom: 2rem;
-  color: #395b5b;
+  color: #487070;
 }
 
 @media screen and (max-width: 768px) {
@@ -176,7 +176,7 @@ li {
 
 li strong {
   font-weight: 600;
-  color: #395b5b;
+  color: #487070;
 }
 
 .card {
@@ -653,6 +653,14 @@ html {
   background-color: #ffa42c;
 }
 
+.justlikehome {
+  background-color: #e3ecda;
+}
+
+.justlikehome:hover {
+  background-color: #738a5e;
+}
+
 .regent {
   background-color: #fce9e5;
 }
@@ -905,7 +913,7 @@ html {
 }
 
 .about a:hover {
-  color: #483a97;
+  color: #413583;
 }
 
 .about-right {
@@ -1061,11 +1069,11 @@ html {
 }
 
 .text a:hover {
-  color: #483a97;
+  color: #413583;
 }
 
 .link-hover:hover p {
-  color: #483a97;
+  color: #413583;
 }
 
 .white {
@@ -1091,12 +1099,6 @@ footer {
   margin-top: 4rem;
   margin-bottom: -3rem;
   pointer-events: none;
-}
-
-@media screen and (max-width: 768px) {
-  .img {
-    margin: 5rem 0 0rem 0;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1312,6 +1314,8 @@ footer {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
