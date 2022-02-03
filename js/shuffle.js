@@ -1,6 +1,6 @@
-// from https://www.tutorialspoint.com/typing-and-deleting-effect-with-javascript-and-css
+// edited from https://www.tutorialspoint.com/typing-and-deleting-effect-with-javascript-and-css
 
-const words = ["solving problems", "discovering music", "creating with Figma", "animals", "meeting other creatives"];
+const words = ["solving problems", "discovering music", "using Figma", "frogs", "meeting other creatives"];
 let i = 0;
 let counter;
 function typeNow() {
@@ -12,7 +12,7 @@ function typeNow() {
          deleteNow();
          return false;
       };
-      counter = setTimeout(loopTyping, 125);
+      counter = setTimeout(loopTyping, 100);
    };
    loopTyping();
 };
@@ -32,8 +32,11 @@ function deleteNow() {
          typeNow();
          return false;
       };
-      counter = setTimeout(loopDeleting, 75);
+      counter = setTimeout(loopDeleting, 50);
    };
-   loopDeleting();
+   setTimeout(function(){
+      loopDeleting();
+   }, 500); 
+
 };
 typeNow();

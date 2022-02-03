@@ -215,11 +215,11 @@ li strong {
 
 ::-moz-selection {
   /* Code for Firefox */
-  background: #f2fdc9;
+  background: #ded7ff;
 }
 
 ::selection {
-  background: #f2fdc9;
+  background: #ded7ff;
 }
 
 html, body {
@@ -332,7 +332,7 @@ html {
 }
 
 .button:hover {
-  color: #d8ff4a;
+  color: #c6bcff;
 }
 
 .button:hover:before {
@@ -380,7 +380,7 @@ html {
 }
 
 .social a:hover {
-  color: #d8ff4a;
+  color: #c6bcff;
 }
 
 #shuffle {
@@ -662,7 +662,7 @@ html {
 }
 
 .justlikehome:hover {
-  background-color: #738a5e;
+  background-color: #799c56;
 }
 
 .regent {
@@ -823,7 +823,7 @@ html {
 }
 
 .nav-links .nav-active, .footer-links .nav-active {
-  color: #d8ff4a;
+  color: #c6bcff;
 }
 
 .nav-content a, .nav-content li {
@@ -831,7 +831,7 @@ html {
 }
 
 .nav-content a :hover, .nav-content li :hover {
-  color: #d8ff4a;
+  color: #c6bcff;
   -webkit-transition: all ease  0.175s;
   transition: all ease  0.175s;
 }
@@ -881,7 +881,7 @@ html {
 }
 
 .footer-links a :hover {
-  color: #94bd00;
+  color: #413583;
   -webkit-transform: scale(1.25);
           transform: scale(1.25);
   -webkit-transition: all ease  0.175s;
@@ -1102,7 +1102,6 @@ footer {
   border-radius: 15px;
   margin-top: 4rem;
   margin-bottom: -3rem;
-  pointer-events: none;
 }
 
 @media screen and (max-width: 500px) {
@@ -1304,7 +1303,7 @@ footer {
 }
 
 .prototype {
-  border: 1px solid #d8ff4a;
+  border: 1px solid #c6bcff;
   margin-top: 1rem;
 }
 
