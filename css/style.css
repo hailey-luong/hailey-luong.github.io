@@ -383,6 +383,10 @@ html {
   color: #d8ff4a;
 }
 
+#shuffle {
+  display: inline-block;
+}
+
 .intro {
   width: 70%;
   margin-top: 15rem;
