@@ -851,6 +851,7 @@ html {
   font-family: 'Cormorant', serif;
   font-size: 1.425em;
   font-weight: 600;
+  font-display: swap;
 }
 
 .nav-content a, .nav-content li {
