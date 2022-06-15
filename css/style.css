@@ -69,6 +69,7 @@ h1 em {
   letter-spacing: 0em;
   font-size: 1.1em;
   text-transform: lowercase;
+  font-display: swap;
 }
 
 .random-text {
@@ -80,6 +81,7 @@ h1 em {
   margin-top: 0;
   margin-bottom: 2rem;
   color: #444444;
+  font-display: swap;
 }
 
 @media screen and (max-width: 768px) {
