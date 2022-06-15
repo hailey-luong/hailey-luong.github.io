@@ -9,7 +9,7 @@ html {
 }
 
 html {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Satoshi-Variable', sans-serif;
     color: $primary;
 }
 
@@ -18,14 +18,10 @@ a {
     text-decoration: none;
 }
 
-h1, h4, h6 {
-    font-family: 'Syne', sans-serif;
-}
-
 p, h2 {
     font-size: 0.875em;
     letter-spacing: 0.0125em;
-    font-weight: 300;
+    font-weight: 325;
 }
 p {
     margin-top: 0.25rem;
@@ -37,28 +33,44 @@ p {
     }
 }
 
-
 h1 {
-    font-weight: 600;
-    font-size: 3.5em;
-    margin-top: -1rem;
-    @media screen and (max-width: $desktop) {
-        font-size: 3.25em;
-    }
-    @media screen and (max-width: $laptop) {
-        font-size: 3em;
-        margin-left: 0rem;
-    }
+    font-size: 5em;
+    font-weight: 375;
+    letter-spacing: 0.01em;
+    line-height: 1.1em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: $primary;
     @media screen and (max-width: $tablet) {
-        font-size: 2em;
+        font-size: 4em;
+        letter-spacing: 0.02em;
     }
-    @media screen and (max-width: $mobile) {
-        font-size: 1.75em;
-        margin-top: -2rem;
+    em {
+        font-family: 'Cormorant', serif;
+        letter-spacing: 0em;
+        font-size: 1.1em;
+        text-transform: lowercase;
+    }
+}
+
+.random-text {
+    font-family: 'Cormorant', serif;
+    letter-spacing: 0em;
+    font-size: 5.5em;
+    font-weight: 375;
+    line-height: 1.1em;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: $primary;
+    @media screen and (max-width: $tablet) {
+        font-size: 4em;
+        letter-spacing: 0.02em;
     }
 }
 
 h2 {
+    font-size: 1em;
+    font-weight: 300;
     margin-top: 4em;
     margin-bottom: 4em;
     letter-spacing: 0.01em;
@@ -80,7 +92,6 @@ h2 span {
 }
 
 h3 {
-    font-family: 'Lexend', sans-serif;
     line-height: 2em;
     text-transform: uppercase;
     font-size: 0.75em;
@@ -96,10 +107,9 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
-    color: $white;
-    letter-spacing: 0.05em;
-    font-weight: 700;
+    font-size: 1.125em;
+    letter-spacing: 0.025em;
+    font-weight: 450;
     display: inline;
     @media screen and (max-width: $mobile) {
         font-size: 1.25em;
@@ -107,25 +117,25 @@ h4 {
 }
 
 h5 {
-    font-family: 'Lexend', sans-serif;
-    font-size: 1.5em;
-    font-weight: 200;
-    letter-spacing: 0.025em;
-    line-height: 1.625em;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    color: $primary-dark;
+    font-weight: 100;
+    font-size: 1.75em;
+    margin-top: -1rem;
+    line-height: 1.375em;
+    @media screen and (max-width: $desktop) {
+        font-size: 1.5em;
+    }
+    @media screen and (max-width: $laptop) {
+        font-size: 2em;
+        margin-left: 0rem;
+        margin-top: 0rem;
+    }
     @media screen and (max-width: $tablet) {
-        font-weight: 200;
-        letter-spacing: 0.02em;
+        font-size: 2em;
     }
-    b {
-        font-family: 'Syne', sans-serif;
-        font-weight: 600;
-        letter-spacing: 0em;
-        font-size: 1.125em;
+    @media screen and (max-width: $mobile) {
+        font-size: 1.5em;
     }
-}
+}Z
 
 h6 {
     font-size: 1.25em;

@@ -1,6 +1,6 @@
 // edited from https://www.tutorialspoint.com/typing-and-deleting-effect-with-javascript-and-css
 
-const words = ["solving problems", "discovering music", "using Figma", "frogs", "meeting other creatives"];
+const words = ["digital designer", "music fanatic", "problem solver", "animal lover"];
 let i = 0;
 let counter;
 function typeNow() {

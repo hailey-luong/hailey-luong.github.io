@@ -147,21 +147,16 @@ display: -webkit-flexbox;
 //* landing page
 
 .intro {
-    width: 70%;
     margin-top: 15rem;
     margin-bottom: -1rem;
     @media screen and (max-width: 1500px) {
-        width: 75%;
-        margin-top: 12rem;
+        margin-top: 13.5rem;
     }
     @media screen and (max-width: $desktop) {
         margin-top: 12rem;
     }
     @media screen and (max-width: $laptop) {
         margin-left: 0rem;
-    }
-    @media screen and (max-width: $tablet) {
-        width: 100%;
     }
     @media screen and (max-width: $mobile) {
         margin-left: 0rem;
@@ -199,7 +194,7 @@ display: -webkit-flexbox;
     position: relative;
     max-width: 1020px;
     max-height: 600px;
-    width: 80vw;
+    width: 82vw;
     height: 50vw;
     display: block;
     margin-left: auto;
@@ -207,9 +202,13 @@ display: -webkit-flexbox;
     padding-left: 4rem;
     margin-top: 2rem;
     overflow: hidden;
-    border-radius: 15px;
+    transition: all .4s ease-in-out; 
+    h1 {
+        transition: all .4s ease-in-out; 
+    }
+    // border-radius: 15px;
     @media screen and (max-width: $laptop) {
-        width: 90vw;
+        width: 88vw;
     }
     @media screen and (max-width: $tablet) {
         height: 80vw;
@@ -230,7 +229,6 @@ display: -webkit-flexbox;
         max-height: 400px;
         min-height: 350px;
     }
-    transition: all .4s ease-in-out; 
     p {
         line-height: 1.5em;
         margin-top: 1em;
@@ -311,6 +309,9 @@ display: -webkit-flexbox;
 
 .card:hover {
     color: $white;
+    h1 {
+        color: $white;
+    }
     .arrow {
         opacity: 1;
         visibility: visible;
@@ -362,6 +363,15 @@ display: -webkit-flexbox;
     background-color: $regent-alt;
 }
 
+.another-round {
+    background-color: $another-round;
+
+}
+
+.another-round:hover {
+    background-color: $another-round-alt;
+}
+
 .discovergaming {
     background-color: $discovergaming;
 }
@@ -380,11 +390,12 @@ section {
 #navbar {
     position: fixed;
     transition: top 0.75s;
-    background-color: $primary;
+    border-bottom: .75px solid $primary;
+    background-color: $white;
 }
 
 #navbar, #footer {
-    height: 5rem;
+    height: 4rem;
     padding: 0.125rem 0;
     z-index: 10;
     display: block;
@@ -393,7 +404,6 @@ section {
 }
 
 .nav-down {
-    background: #f5b335;
     height: 40px;
     position: fixed;
     top: 0;
@@ -453,8 +463,9 @@ section {
 .nav-links, .footer-links {
     a {
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 350;
         font-size: 1.125em;
+        letter-spacing: 0.0125em;
         text-align: center;
         padding: 0;
         margin: 0 3rem 0 0;
@@ -479,24 +490,27 @@ section {
         -ms-flex-align: center;
         -webkit-align-items: center;
         width: 50%;
-        padding-top: 0.325rem;
         @media screen and (max-width: $mobile) {
             font-size: 1em;
-            margin-top: 1.625rem;
             padding-top: 0;
         }
     }
     .nav-active {
         color: $secondary-alt;
+        font-family: 'Cormorant', serif;
+        font-size: 1.425em;
+        font-weight: 600;
     }
 }
 
 .nav-content {
     a, li {
-        color: $white;
+        color: $primary;
         :hover {
             color: $secondary-alt;
             transition: all ease  0.175s;
+            padding-bottom: .375rem;
+            // border-bottom: 2px solid;
         }
     }
 }
@@ -707,7 +721,7 @@ footer {
 .img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
+    // border-radius: 15px;
     margin-top: 4rem;
     margin-bottom: -3rem;
     @media screen and (max-width: $mobile) {

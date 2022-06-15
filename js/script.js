@@ -1,4 +1,4 @@
-// Hide Header on on scroll down (from https://codepen.io/gil/pen/JOpZXX)
+// Hide Header on on scroll down (edited from https://codepen.io/gil/pen/JOpZXX)
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
@@ -39,18 +39,18 @@ function hasScrolled() {
 
 // cursor
 
-const cursor = document.querySelector('.cursor');
-document.addEventListener('mousemove', (e) => {
-  cursor.setAttribute("style","top: "+(e.clientY-6)+"px; left: "+(e.clientX-6)+"px")
-})
+// const cursor = document.querySelector('.cursor');
+// document.addEventListener('mousemove', (e) => {
+//   cursor.setAttribute("style","top: "+(e.clientY-6)+"px; left: "+(e.clientX-6)+"px")
+// })
 
-document.addEventListener('click', () => {
-  cursor.classList.add("expand");
+// document.addEventListener('click', () => {
+//   cursor.classList.add("expand");
 
-  setTimeout (() => {
-    cursor.classList.remove("expand");
-  }, 500)
-})
+//   setTimeout (() => {
+//     cursor.classList.remove("expand");
+//   }, 500)
+// })
 
 // show images on scroll (from CSS Animation on YouTube)
 

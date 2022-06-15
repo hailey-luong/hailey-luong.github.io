@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Hello :) This was all coded and put together by me!-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Hailey Luong</title>
+    <link rel="icon" href="images/avatar.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/satoshi.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <link href="css/flexboxgrid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav id="navbar" class="nav-down">
+        <div class="nav-content">
+            <div class="name nav-hide">
+                <a href="index.html">
+                    <h4>Hailey Luong</h4>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.html" class="nav-active">
+                            play
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            about
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--intro-->
+    <section class="block">
+        <div class="intro show-on-scroll">
+            <div class="random-text">fun stuff</div>
+                <br>
+            </div>
+        </div>
+    </section>
+
+    <!--work-->
+    <section class="block">
+        <h2><span>a collection of other things I've made</span></h2>
+    </section>
+
+    <section class="landing">
+        <a href="justlikehome.html" class="card justlikehome">
+            <div class="cardtext col-sm-4">
+                <h3>Package Design</h3>
+                <div class="h1">
+                    <h1>Just Like Home</h1>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <p>Vibrant soup packaging inspired by flavours around the world</p>
+            </div>
+            <div>
+                <img src="images/justlikehome/banner-img.png" alt="Website" class="cardimg">
+            </div>
+        </a>
+
+        <a href="anotherround.html" class="card another-round">
+            <div class="cardtext col-sm-4">
+                <h3>Photography / Editorial</h3>
+                <div class="h1">
+                    <h1>Another Round</h1>
+                    <div class="arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <p>Shot glass catalogue</p>
+            </div>
+            <div card-img-tablet>
+                <img src="images/another_round/banner-img.png" alt="Website" class="cardimg">
+            </div>
+        </a>
+
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div>
+                    <p>Designed & coded by me!</p>
+                </div>
+                <div>
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="mailto: luong.hailey@gmail.com">
+                                    <div class="icon"></div>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/haileyluong/" target="_blank">
+                                    <div class="icon"></div>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baffle.js/0.3.6/baffle.min.js"></script>
+    <script>  const randomText = baffle(".random-text");
+        randomText.set({
+          characters: "!@#$%^&*()-+=[]{};:,./<>?",
+          speed: 120
+        });
+        randomText.start();
+        randomText.reveal(3000, [800]);</script>
+</body>
+
+</html>
