@@ -66,6 +66,7 @@ h1 {
 
 h1 em {
   font-family: 'Cormorant', serif;
+  font-style: italic;
   letter-spacing: 0em;
   font-size: 1.1em;
   text-transform: lowercase;
@@ -74,6 +75,7 @@ h1 em {
 
 .random-text {
   font-family: 'Cormorant', serif;
+  font-style: italic;
   letter-spacing: 0em;
   font-size: 5.5em;
   font-weight: 375;
@@ -852,6 +854,7 @@ html {
   font-size: 1.425em;
   font-weight: 600;
   font-display: swap;
+  font-style: italic;
 }
 
 .nav-content a, .nav-content li {
