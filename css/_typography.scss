@@ -45,6 +45,11 @@ h1 {
         font-size: 4em;
         letter-spacing: 0.02em;
     }
+    @media screen and (max-width: $mobile) {
+        font-size: 3em;
+        letter-spacing: 0.02em;
+        margin-top: -2rem;
+    }
     em {
         font-family: 'Cormorant', serif;
         font-style: italic;
