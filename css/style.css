@@ -440,7 +440,7 @@ html {
 @media screen and (max-width: 500px) {
   .intro {
     margin-left: 0rem;
-    margin-bottom: -2rem;
+    margin-bottom: -5rem;
   }
 }
 
@@ -714,6 +714,15 @@ html {
 
 .discovergaming:hover {
   background-color: #507fff;
+}
+
+.orvos {
+  background-color: #CFE9E0;
+  display: none;
+}
+
+.orvos:hover {
+  background-color: #2aa39d;
 }
 
 @media screen and (max-width: 768px) {

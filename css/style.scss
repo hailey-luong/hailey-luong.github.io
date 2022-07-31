@@ -160,7 +160,7 @@ display: -webkit-flexbox;
     }
     @media screen and (max-width: $mobile) {
         margin-left: 0rem;
-        margin-bottom: -2rem;
+        margin-bottom: -5rem;
     }
 }
 
@@ -377,6 +377,15 @@ display: -webkit-flexbox;
 }
 .discovergaming:hover {
     background-color: $discovergaming-alt;
+}
+
+.orvos {
+    background-color: $orvos;
+    display: none;
+}
+
+.orvos:hover {
+    background-color: $orvos-alt;
 }
 
 section {
