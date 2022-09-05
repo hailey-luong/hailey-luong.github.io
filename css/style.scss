@@ -14,6 +14,7 @@ html, body {
     padding: 0;
     border: 0;
     overflow-x:hidden;
+    overflow-y: scroll;
 }
 
 html {
@@ -147,20 +148,20 @@ display: -webkit-flexbox;
 //* landing page
 
 .intro {
-    margin-top: 15rem;
-    margin-bottom: -1rem;
-    @media screen and (max-width: 1500px) {
+    margin-top: 14rem;
+    display: relative;
+    /*@media screen and (max-width: 1500px) {
         margin-top: 13.5rem;
     }
     @media screen and (max-width: $desktop) {
-        margin-top: 12rem;
+        margin-top: 13.5rem;
     }
     @media screen and (max-width: $laptop) {
         margin-left: 0rem;
-    }
+    }*/
     @media screen and (max-width: $mobile) {
         margin-left: 0rem;
-        margin-bottom: -5rem;
+        margin-top: 13.5rem;
     }
 }
 
@@ -184,6 +185,9 @@ display: -webkit-flexbox;
         margin-left: 0rem;
         margin-bottom: -1rem;
     }
+    @media screen and (max-width: $mobile) {
+        margin-top: 0rem;
+    }
 }
 
 .one-rem {
@@ -200,7 +204,7 @@ display: -webkit-flexbox;
     margin-left: auto;
     margin-right: auto;
     padding-left: 4rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     overflow: hidden;
     transition: all .4s ease-in-out; 
     h1 {
@@ -230,7 +234,8 @@ display: -webkit-flexbox;
         min-height: 350px;
     }
     p {
-        line-height: 1.5em;
+        font-size: 1em;
+        line-height: 1.25em;
         margin-top: 1em;
     }
     h3 {
@@ -284,6 +289,7 @@ display: -webkit-flexbox;
     opacity: 0;
     transition: visibility 0s, opacity 0.25s ease-in;
     transition-delay: 0.075s;
+    font-size: 1.125em;
     @media screen and (max-width: $tablet) {
         margin-top: 0.5rem;
     }
@@ -321,24 +327,28 @@ display: -webkit-flexbox;
 
 .cardimg {
     position: absolute;
-    transform: translateY(-50%);
-    right: 5%;
-    top: 50%;
-    width: 45%;
-    @media screen and (max-width: 1500px) {
-        right: 0%;
-    }
+    left: 55%;
+    bottom: 0;
+    height: 80%;
     @media screen and (max-width: $tablet) {
+        transform: translateY(0);
+        transform: translateX(-50%);
+        left: 50%;
+        padding-top: 20%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*@media screen and (max-width: 600px) {
         transform: translateY(0);
         padding-top: 10%;
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        width: 80%;
+        margin-left: -1rem;
+        width: 110%;
     }
     @media screen and (max-width: $mobile) {
-        height: 80%;
-    }
+        width: 100%;
+    }*/
 }
 
 .ovopy {
@@ -379,14 +389,35 @@ display: -webkit-flexbox;
     background-color: $discovergaming-alt;
 }
 
-.orvos {
-    background-color: $orvos;
-    display: none;
+.IMT {
+    background-color: $IMT;
 }
 
-.orvos:hover {
-    background-color: $orvos-alt;
+.IMT:hover {
+    background-color: $IMT-alt;
 }
+
+.about-banner {
+	background: linear-gradient(-45deg, #ffd9cd, #ffcfe1, #d1f3ff, #d1fff3);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+//gradient source code from https://codepen.io/P1N2O/pen/pyBNzX
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 section {
     @media screen and (max-width: $tablet) {
@@ -593,7 +624,7 @@ section {
 
 .about-right {
     padding-left: 0;
-    margin-top: -1rem;
+    margin-top: -2rem;
     width: 100%;
     @media screen and (max-width: $laptop) {
     display: flex;
@@ -684,7 +715,7 @@ section {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     @media screen and (max-width: $laptop) {
         flex-direction: column;
         -webkit-flex-direction: column;
@@ -736,40 +767,79 @@ footer {
     width: 100%;
     height: 100%;
     // border-radius: 15px;
-    margin-top: 4rem;
-    margin-bottom: -3rem;
+    margin-top: 5rem;
+    margin-bottom: 0;
     @media screen and (max-width: $mobile) {
-        margin: 2.5rem 0 -3.5rem 0;
+        margin: 2.5rem 0 -1.5rem 0;
+    }
+}
+
+.rainbow {
+    position: absolute;
+    right: 0;
+    top: -3rem;
+    width: 24rem;
+    @media screen and (max-width: $laptop) {
+        width: 22rem;
+    }
+    @media screen and (max-width: $tablet) {
+        width: 18rem;
+        right: -2rem;
+        top: -1rem;
+    }
+    @media screen and (max-width: 800px) {
+        width: 12rem;
+        top: 1rem;
+    }
+    @media screen and (max-width: 600px) {
+        display: none;
     }
 }
 
 .banner-div {
     position: relative;
     text-align: center;
-    width: 100%;
+    width: 100vw;
+    overflow: hidden;
+    height: 50vh;
+    padding: 0;
+    margin-bottom: 3rem;
+    transition: all .8s ease-in-out; 
+    @media screen and (max-width: $tablet) {
+        height: 40vh;
+    }
 }
 
 .banner {
-    width: 100vw;
-    height: 60vh;
-    object-fit: cover;
+    object-fit: 100vw;
+    margin: 0;
+    padding: 0;
+    display: none;
 }
 
 .banner-img {
     
-    height: 40vh;
+    height: 45vh;
     position: absolute; 
     left: 0; 
     right: 0; 
-    bottom: 1rem;
+    top: 20vh;
     margin-left: auto; 
     margin-right: auto; 
+    @media screen and (max-width: $tablet) {
+            object-fit: contain;
+            transform: translateX(-50%);
+            top: 10vh;
+            padding: 5rem;
+        }
     }
 
-.small {
-    width: 75%;
-    @media screen and (max-width: $desktop) {
-        width: 100%;
+.me {
+    height: 50vh;
+    top: 18vh;
+    @media screen and (max-width: $tablet) {
+        height: 60vh;
+        top: 6vh;
     }
 }
 
@@ -896,7 +966,7 @@ footer {
     width: 100%;
     height: 100%;
     border-style: none;
-    margin: 2rem 0;
+    // margin: 2rem 0;
 }
 
 .pdf {
@@ -922,15 +992,15 @@ footer {
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; 
+    padding-bottom: 0; 
     height: 0;
     border-radius: 15px;
-    margin: 2rem 0 2rem -1rem;
+    margin: -1rem 0 2rem -1rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
-    overflow: hidden;
+    overflow: visible;
     @media screen and (max-width: $tablet) {
         margin: 1rem auto;
     }
@@ -1010,7 +1080,7 @@ footer {
     }
 }
 
-//* mobile message
+/* mobile message
 
 .overlay, .popup {
     visibility: hidden;
@@ -1046,4 +1116,4 @@ z-index: 21;
         font-weight: 600;
         font-size: 2em;
     }
-}
+} */

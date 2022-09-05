@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Access to Funds</title>
+    <link rel="icon" href="images/avatar.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="css/satoshi.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/flexboxgrid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <SCRIPT language="JavaScript">
+        var password; 
+        var pass1="Luong2022"; 
+        password=prompt('Enter password provided on résumé',' '); 
+        if (password==pass1) 
+        alert('Click OK to proceed!'); 
+        else { 
+            window.location="https://hailey-luong.github.io/"; 
+        } 
+    </SCRIPT>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav id="navbar" class="nav-down">
+        <div class="nav-content">
+            <div class="name nav-hide">
+                <a href="index.html">
+                    <h4>Hailey Luong</h4>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-active">
+                            work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.html">
+                            play
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            about
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="banner-div IMT">
+        <img src="images/IMT/IMT_cover.png" alt="Screen from the app" class="banner-img show-on-scroll">
+    </div>
+
+    <section class="block">
+
+        <h1 data-aos="zoom-in-right">Access to Funds<br> <em>internship project</em></h1>
+        <h2><span>Overview</span></h2>
+        <div class="row about">
+            <div class="col-sm-12 col-md-8">
+                <h5>Allowing clients to access a higher limit when sending an International Money Transfer (IMT)</h5>
+
+                <p>On this project, I collaborated with a Product Owner, Business Analyst, Developers, and other
+                    Designers. I contributed to the visual exploration, UX design, prototyping, usability testing, and
+                    research synthesis.
+                </p>
+            </div>
+
+            <div class="about-right col-sm-12 col-md-4">
+                <div class="col-xs-6 col-sm-4 col-md-12">
+                    <h3>Type</h3>
+                    <p>UX / Visual Design / User Testing</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-12">
+                    <h3>Timeline</h3>
+                    <p>August 2022</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-12">
+                    <h3>Tools</h3>
+                    <p>Figma / UserTesting.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--App Prototype-->
+    <section class="block">
+        <h2><span>Final Product</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Desktop Flow</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>The application includes a simple event planning system that facilitates social connection with
+                    friends and family. Although difficult to achieve during the COVID-19 pandemic, interaction remains
+                    an integral component in anyone's life. This function makes it easier for people to compare
+                    schedules, organize remote gatherings, and set reminders for events.</p>
+            </div>
+        </div>
+        <div style="padding:60% 0 0 0;position:relative;" class="iframe-container">
+            <iframe
+                src="https://player.vimeo.com/video/746343259?h=e22b62a5d7&byline=0&portrait=0&loop=1&autoplay=1&autopause=0&badge=0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" class="iframe" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Breakpoints</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Working with Developers, it was crucial to recreate the screens on various other breakpoints,
+                    including extra small (mobile) and medium (tablet). We aimed to maintain consistency for visual
+                    hierarchy, while adapting each screeen to better suit the device size on which it was displayed.</p>
+            </div>
+        </div>
+        <img class="img show-on-scroll" src="images/IMT/breakpoints.png"
+            alt="Various breakpoints (XS and tablet screens)">
+    </section>
+
+    <!--Business Requirements-->
+
+    <section class="block">
+        <h2><span>Business Requirements</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Scope</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>The clients are to be offered a higher limit when sending an International Money Transfer (IMT). We
+                    will also allow clients to view and keep track of their daily remaining limit for IMTs.
+
+                    In phase 1, clients would need to log into the mobile application to access multi-factor
+                    authentication and see if they qualify for a higher daily transaction limit.
+
+                    In phase 2, clients would be able to see if they qualify for a higher limit through Online Banking.
+                </p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Painpoints</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>With the existing system, the client experiences a variety of painpoints when having to send over
+                    $2,500 — which is the current Daily Transfer Limit. To better understand the user, we outlined some
+                    of the main ones.</p>
+            </div>
+        </div>
+
+        <!--Paintpoint cards-->
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>The client has to <strong>wait until the following day</strong> to send another transaction
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>The client must pay <strong>multiple transfer fees</strong> when sending funds over $2500</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>There is no indication within the system regarding the client's <strong>remaining
+                                balance</strong></p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Considerations</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>There are also a variety of considerations that need to be taken into mind when evaluating potential
+                    approaches. Not every client will be eligible for an increased limit, so the system has to clarify
+                    that it is a potential increase and we must be cautious as to not mislead the client. We also don't
+                    want any messaging to seem promotional, as it could appear deceptive or be missed by the user due to
+                    "banner blindness". Overall, we need to ensure that our system remains <strong>upfront, reliable,
+                        and trustworthy.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!--Heuristic Evaluation-->
+
+    <section class="block">
+        <h2><span>Heuristic Evaluation</span></h2>
+
+        <p>Our team considered three pages for the added functionalities to IMT – the IMT Landing page, Transfer Details
+            page, and final Confirmation page. Through a heuristic evaluation, we weighed the advantages and
+            disadvantages of each approach.</p>
+
+        <img class="img show-on-scroll" src="images/IMT/HeuristicEvaluation.png"
+            alt="IMT Landing page, Transfer Details page, and final Confirmation page on XS screens">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Landing Page</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>The information is upfront, and offers transparent communication with the client. However, users tend
+                    to click on the call-to-action without thoroughly reading through the other content on the page,
+                    which can make it possible to miss.</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Transfer Details</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Our team felt that this option seemed the most relevant as it's where the clients are conducting
+                    transfers, and the placement is more likely to help clients avoid multiple transfer fees. Although,
+                    we also determined that it might lead to a potential overload of information and could be difficult
+                    to integrate it with existing components.</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Confirmation Page</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Adding the messaging at the end will not interrupt the transfer flow, which could improve the
+                    transfer experience. However, the disadvantages seemed to greatly outweigh the potential benefits,
+                    as this option is not as upfront and lacks transparency. Moreover, clients often don't take the time
+                    to review the information on confirmation pages, and would likely miss it. Thus, we decided to feature the messaging on the Landing page, and make it available as a tooltip in the Transfer Details page.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Visual Exploration-->
+
+    <section class="block">
+        <h2><span>Visual Exploration</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Banner</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Referring to illustrations and components available in the Financial Institution's interface guidelines, we explored various methods of presenting the messaging on the Landing page. We wanted it to be an eye-catching element on the page, while also ensuring that it wouldn't be perceived as promotional.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/IMT/BannerExploration.png"
+            alt="Exploration for banner visuals">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Limit Display</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Our team also explored different approaches to displaying the limit display information, to find a layout that could be easily understood by the client.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/IMT/LimitDisplay.png" alt="Exploration for limit display">
+
+
+    </section>
+
+    <!--Usability Testing-->
+
+    <section class="block">
+        <h2><span>Usability Testing</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Objective</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>We conducted usability Testing with existing clients to gain insight into areas of improvement, and ensure that our approach offered a positive user experience. The testing was performed to support phase 1, and understand client experiences around requesting higher limits, clarity of content and inform future work on phase 2.</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Process</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>The Design Researcher prepared a research outline, and a number of questions to walk the client through the flow and prompt further thinking. We had eight 30-minute sessions, and I was fortunate to have the opportunity to act as an observer, note-taker, and even as a moderater! We colour-coded our notes to organize them into 5 categories: important, positive, negative, suggestions, and team ideas.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/IMT/Stickies.png" alt="Categories of sticky notes">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Key Insights</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>From the usability testing sessions, we gained a number of insights that helped us narrow in on our direction. These were some of the major ones, and "How Might We?" questions to consider.</p>
+            </div>
+        </div>
+
+        <!--Insight cards-->
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Confusion about limits</strong></p>
+                        <p>HMW provide clients with information about IMTs, limits and the transfer experience?</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Skipping over info</strong></p>
+                        <p>HMW ensure limit information is easily identified and presented at the right moments?</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p><strong>Lacking transparency</strong></p>
+                        <p>HMW explain trusted devices and mobile app limits without compromising security?</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="block">
+        <h2><span>Final Steps</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Refining the Design</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>To address the HMW questions developed in response to the usability testing, we outlined a few of our next steps. We needed to clarify the various limits by including more specific language, and decided to lay them similarly to the Mobile app. We also decided to include a longer description on the landing page, and reiterate the messaging on the transfer details page. These changes would better align our flow to the Financial Insitution's values of being upfront, reliable, and trustworthy.</p>
+            </div>
+        </div>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Working with Developers</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Our team of designers produced pixel-perfect flows using the Financial Institution's component library, so that developers could implement it into the website. We also considered the possibility of different error scenarios, and created mockups to represent how they would show up.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/IMT/Errors.png" alt="Error banners">
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>Moving forward</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>To finalize the project, we would have met with the accessibility team to ensure that the design would remain accessible through the development of the product. Following the development of the feature, we would test the flow to ensure there are no bugs and that the functionality works as planned. In order to measure impact, the Business Analyst would measure how many people start the flow through Online Banking, and how many complete the transfer to mobile. For extra small breakpoints, we would also create a link to access the mobile app. Further into the future, we would start on phase 2 of the project.</p>
+            </div>
+        </div>
+
+        <img class="img show-on-scroll" src="images/IMT/Flow.gif" alt="Final Flow">
+
+        <div>
+            <a href="index.html">
+                <p><i class="fas fa-arrow-left arrow-hover-left"></i>Return to Homepage</p>
+            </a>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="footer">
+            <div class="footer-content">
+                <div>
+                    <p>Designed & coded by me!</p>
+                </div>
+                <div>
+                    <div class="footer-links">
+                        <ul>
+                            <li>
+                                <a href="mailto: luong.hailey@gmail.com">
+                                    <div class="icon"></div>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/haileyluong/" target="_blank">
+                                    <div class="icon"></div>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- js links -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
