@@ -21,18 +21,34 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 
     <SCRIPT language="JavaScript">
-        var password; 
-        var pass1="Luong2022"; 
-        password=prompt('Enter password provided on résumé',' '); 
-        if (password==pass1) 
-        alert('Click OK to proceed!'); 
-        else { 
-            window.location="https://hailey-luong.github.io/"; 
-        } 
+        var password;
+        var password = "";
+        var pass1="Luong2023";
+
+        function passwordPrompt(){
+            password=prompt('Enter password provided on résumé',' '); 
+            
+            if (password==pass1) {
+                blurOff();
+            } else if (password == null) {
+                window.location="https://hailey-luong.github.io/";
+            } else if (password == "" || " ") {
+                passwordPrompt();
+            } else { 
+                passwordPrompt();
+            } 
+        }
+
+        function blurOff() {
+            console.log("Hello world!");
+            document.getElementById('blur').style.visibility = 'hidden';
+            document.getElementById('blur').style.display = 'none';
+        }
+        
     </SCRIPT>
 </head>
 
-<body>
+<body onload="passwordPrompt()">
 
     <!--navbar-->
     <nav id="navbar" class="nav-down">
@@ -64,6 +80,8 @@
         </div>
     </nav>
 
+    <div id="blur"></div>
+
     <div class="banner-div IMT">
         <img src="images/IMT/IMT_cover.png" alt="Screen from the app" class="banner-img show-on-scroll">
     </div>
@@ -76,7 +94,7 @@
             <div class="col-sm-12 col-md-8">
                 <h5>Allowing clients to access a higher limit when sending an International Money Transfer (IMT)</h5>
 
-                <p>On this project, I collaborated with a Product Owner, Business Analyst, Developers, and other
+                <p>During my Visual Design internship with the Royal Bank of Canada (RBC). I collaborated on this project with a Product Owner, a Business Analyst, Developers, and other
                     Designers. I contributed to the visual exploration, UX design, prototyping, usability testing, and
                     research synthesis.
                 </p>
@@ -103,17 +121,6 @@
     <section class="block">
         <h2><span>Final Product</span></h2>
 
-        <div class="text">
-            <div class="col-xs-12 col-md-3 col-lg-2">
-                <h3>Desktop Flow</h3>
-            </div>
-            <div class="col-xs-12 col-md-9">
-                <p>The application includes a simple event planning system that facilitates social connection with
-                    friends and family. Although difficult to achieve during the COVID-19 pandemic, interaction remains
-                    an integral component in anyone's life. This function makes it easier for people to compare
-                    schedules, organize remote gatherings, and set reminders for events.</p>
-            </div>
-        </div>
         <div style="padding:60% 0 0 0;position:relative;" class="iframe-container">
             <iframe
                 src="https://player.vimeo.com/video/746343259?h=e22b62a5d7&byline=0&portrait=0&loop=1&autoplay=1&autopause=0&badge=0"
