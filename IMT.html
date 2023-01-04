@@ -28,7 +28,7 @@
         function passwordPrompt(){
             password=prompt('Enter password provided on résumé',' '); 
             
-            if (password==pass1) {
+            if (password==pass1 || password==" "+pass1) {
                 blurOff();
             } else if (password == null) {
                 window.location="https://hailey-luong.github.io/";
