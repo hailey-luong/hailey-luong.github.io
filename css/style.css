@@ -54,10 +54,10 @@ p strong {
 }
 
 h1 {
+  font-family: 'p22_mackinac_probook';
   font-size: 4em;
-  font-weight: 375;
-  letter-spacing: 0.01em;
-  line-height: 1.1em;
+  font-weight: 400;
+  line-height: 1em;
   margin-top: 0;
   margin-bottom: 1rem;
   color: #444444;
@@ -79,20 +79,19 @@ h1 {
 }
 
 h1 em {
-  font-family: 'Cormorant', serif;
-  font-style: italic;
-  letter-spacing: 0em;
-  font-size: 1.1em;
+  font-family: 'Satoshi-Variable', sans-serif;
+  font-size: 0.825em;
+  font-weight: 300;
   text-transform: lowercase;
   font-display: swap;
+  font-style: normal;
+  letter-spacing: 2%;
 }
 
 .random-text {
-  font-family: 'Cormorant', serif;
-  font-style: italic;
-  letter-spacing: 0em;
-  font-size: 5.5em;
-  font-weight: 375;
+  font-family: 'p22_mackinac_probook';
+  font-size: 4em;
+  font-weight: 300;
   line-height: 1.1em;
   margin-top: 0;
   color: #444444;
@@ -150,9 +149,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.125em;
-  letter-spacing: 0.025em;
-  font-weight: 450;
+  font-family: 'p22_mackinac_promedium';
+  font-size: 1em;
+  letter-spacing: 0.0325em;
   display: inline;
 }
 
@@ -365,7 +364,7 @@ html {
 }
 
 .button:hover {
-  color: #6F58FF;
+  color: #5160b8;
 }
 
 .button:hover:before {
@@ -413,7 +412,7 @@ html {
 }
 
 .social a:hover {
-  color: #6F58FF;
+  color: #5160b8;
 }
 
 #shuffle {
@@ -587,7 +586,7 @@ html {
   -moz-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 .arrow {
@@ -687,12 +686,20 @@ html {
   background-color: #ffa42c;
 }
 
+.gyve {
+  background-color: #DFEBEC;
+}
+
+.gyve:hover {
+  background-color: #5aa2aa;
+}
+
 .justlikehome {
   background-color: #e3ecda;
 }
 
 .justlikehome:hover {
-  background-color: #75a744;
+  background-color: #76944d;
 }
 
 .regent {
@@ -725,6 +732,14 @@ html {
 
 .IMT:hover {
   background-color: #5aa2aa;
+}
+
+.align {
+  background-color: #E0E5F3;
+}
+
+.align:hover {
+  background-color: #5B6389;
 }
 
 .about-banner {
@@ -900,12 +915,11 @@ html {
 }
 
 .nav-links .nav-active, .footer-links .nav-active {
-  color: #6F58FF;
-  font-family: 'Cormorant', serif;
-  font-size: 1.425em;
-  font-weight: 600;
+  color: #5160b8;
+  font-family: 'p22_mackinac_probold';
+  font-size: 1em;
+  font-weight: 800;
   font-display: swap;
-  font-style: italic;
 }
 
 .nav-content a, .nav-content li {
@@ -913,7 +927,7 @@ html {
 }
 
 .nav-content a :hover, .nav-content li :hover {
-  color: #6F58FF;
+  color: #5160b8;
   -webkit-transition: all ease  0.175s;
   transition: all ease  0.175s;
   padding-bottom: .375rem;
@@ -1461,7 +1475,7 @@ footer {
 }
 
 .prototype {
-  border: 1px solid #6F58FF;
+  border: 1px solid #5160b8;
   margin-top: 1rem;
 }
 

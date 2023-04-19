@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'p22_mackinac_probold';
+    src: url('../fonts/p22/p22mackinacpro-bold_16-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-bold_16-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_probook';
+    src: url('../fonts/p22/p22mackinacpro-book_25-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-book_25-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_proextrabold';
+    src: url('../fonts/p22/p22mackinacpro-extrabold_12-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-extrabold_12-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_promedium';
+    src: url('../fonts/p22/p22mackinacpro-medium_26-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-medium_26-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_probold_italic';
+    src: url('../fonts/p22/p22mackinacpro-bolditalic_11-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-bolditalic_11-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_probook_italic';
+    src: url('../fonts/p22/p22mackinacpro-bookitalic_15-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-bookitalic_15-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_proXBdIt';
+    src: url('../fonts/p22/p22mackinacpro-exbolditalic_17-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-exbolditalic_17-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'p22_mackinac_promedium_italic';
+    src: url('../fonts/p22/p22mackinacpro-meditalic_18-webfont.woff2') format('woff2'),
+         url('../fonts/p22/p22mackinacpro-meditalic_18-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -278,7 +278,7 @@ display: -webkit-flexbox;
         -moz-box-align: center;
         -ms-flex-align: center;
         -webkit-align-items: center;
-        font-size: 1.25em;
+        font-size: 1.5em;
     }
 }
 
@@ -358,6 +358,13 @@ display: -webkit-flexbox;
     background-color: $ovopy-alt;
 }
 
+.gyve {
+    background-color: $IMT;
+}
+.gyve:hover {
+    background-color: $IMT-alt;
+}
+
 .justlikehome {
     background-color: $justlikehome;
 }
@@ -375,9 +382,7 @@ display: -webkit-flexbox;
 
 .another-round {
     background-color: $another-round;
-
 }
-
 .another-round:hover {
     background-color: $another-round-alt;
 }
@@ -395,6 +400,14 @@ display: -webkit-flexbox;
 
 .IMT:hover {
     background-color: $IMT-alt;
+}
+
+.align {
+    background-color: $align;
+}
+
+.align:hover {
+    background-color: $align-alt;
 }
 
 .about-banner {
@@ -537,11 +550,10 @@ section {
     }
     .nav-active {
         color: $secondary-alt;
-        font-family: 'Cormorant', serif;
-        font-size: 1.425em;
-        font-weight: 600;
+        font-family: 'p22_mackinac_probold';
+        font-size: 1em;
+        font-weight: 800;
         font-display: swap;
-        font-style: italic;
     }
 }
 

@@ -37,10 +37,10 @@ p {
 }
 
 h1 {
+    font-family: 'p22_mackinac_probook';
     font-size: 4em;
-    font-weight: 375;
-    letter-spacing: 0.01em;
-    line-height: 1.1em;
+    font-weight: 400;
+    line-height: 1em;
     margin-top: 0;
     margin-bottom: 1rem;
     color: $primary;
@@ -54,21 +54,20 @@ h1 {
         margin-bottom: 0rem;
     }
     em {
-        font-family: 'Cormorant', serif;
-        font-style: italic;
-        letter-spacing: 0em;
-        font-size: 1.1em;
+        font-family: 'Satoshi-Variable', sans-serif;
+        font-size: 0.825em;
+        font-weight: 300;
         text-transform: lowercase;
         font-display: swap;
+        font-style: normal;
+        letter-spacing: 2%;
     }
 }
 
 .random-text {
-    font-family: 'Cormorant', serif;
-    font-style: italic;
-    letter-spacing: 0em;
-    font-size: 5.5em;
-    font-weight: 375;
+    font-family: 'p22_mackinac_probook';
+    font-size: 4em;
+    font-weight: 300;
     line-height: 1.1em;
     margin-top: 0;
     color: $primary;
@@ -119,9 +118,8 @@ h3 {
 }
 
 h4 {
-    font-size: 1.125em;
-    letter-spacing: 0.025em;
-    font-weight: 450;
+    font-family: 'p22_mackinac_probook';
+    font-size: 1em;
     display: inline;
     @media screen and (max-width: $mobile) {
         font-size: 1.25em;
