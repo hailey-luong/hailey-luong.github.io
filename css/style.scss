@@ -554,6 +554,9 @@ section {
         font-size: 1em;
         font-weight: 800;
         font-display: swap;
+        @media screen and (max-width: $tablet) {
+            font-family: 'p22_mackinac_prosemibold';
+        }
     }
 }
 
