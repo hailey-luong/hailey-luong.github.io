@@ -149,9 +149,9 @@ h3 {
 }
 
 h4 {
-  font-family: 'p22_mackinac_promedium';
+  font-family: 'p22_mackinac_probook';
   font-size: 1em;
-  letter-spacing: 0.0325em;
+  letter-spacing: 0.025em;
   display: inline;
 }
 
@@ -510,22 +510,13 @@ html {
   .card {
     height: 80vw;
     padding: 0 2rem 2rem 3rem;
-    /* display: flex;
-        display: -webkit-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flexbox;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        */
   }
 }
 
 @media screen and (max-width: 500px) {
   .card {
     height: 65vh;
-    padding: 0 1rem 1rem 2rem;
+    padding: 0.5rem 1rem 1rem 2rem;
     max-height: 400px;
     min-height: 350px;
   }
@@ -535,6 +526,14 @@ html {
   font-size: 1em;
   line-height: 1.25em;
   margin-top: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .card p {
+    margin-right: 5rem;
+    font-size: 1.25em;
+    line-height: 140%;
+  }
 }
 
 .card h3 {
@@ -683,15 +682,7 @@ html {
 }
 
 .ovopy:hover {
-  background-color: #ffa42c;
-}
-
-.gyve {
-  background-color: #DFEBEC;
-}
-
-.gyve:hover {
-  background-color: #5aa2aa;
+  background-color: #eb9c35;
 }
 
 .justlikehome {
@@ -699,23 +690,15 @@ html {
 }
 
 .justlikehome:hover {
-  background-color: #76944d;
+  background-color: #81a54e;
 }
 
-.regent {
-  background-color: #fce9e5;
+.gyve {
+  background-color: #ffe5e4;
 }
 
-.regent:hover {
-  background-color: #ff6e4a;
-}
-
-.another-round {
-  background-color: #d0cbda;
-}
-
-.another-round:hover {
-  background-color: #524d9e;
+.gyve:hover {
+  background-color: #ff7167;
 }
 
 .discovergaming {
@@ -723,7 +706,7 @@ html {
 }
 
 .discovergaming:hover {
-  background-color: #417bfa;
+  background-color: #4976d8;
 }
 
 .IMT {
@@ -739,7 +722,7 @@ html {
 }
 
 .align:hover {
-  background-color: #5B6389;
+  background-color: #6777c5;
 }
 
 .about-banner {
@@ -920,6 +903,13 @@ html {
   font-size: 1em;
   font-weight: 800;
   font-display: swap;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links .nav-active, .footer-links .nav-active {
+    font-family: 'p22_mackinac_probold';
+    font-size: 0.95em;
+  }
 }
 
 .nav-content a, .nav-content li {

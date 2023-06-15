@@ -217,19 +217,10 @@ display: -webkit-flexbox;
     @media screen and (max-width: $tablet) {
         height: 80vw;
         padding: 0 2rem 2rem 3rem;
-        /* display: flex;
-        display: -webkit-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flexbox;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        */
     } 
     @media screen and (max-width: $mobile) {
         height: 65vh;
-        padding: 0 1rem 1rem 2rem;
+        padding: 0.5rem 1rem 1rem 2rem;
         max-height: 400px;
         min-height: 350px;
     }
@@ -237,6 +228,11 @@ display: -webkit-flexbox;
         font-size: 1em;
         line-height: 1.25em;
         margin-top: 1em;
+        @media screen and (max-width: $mobile) {
+            margin-right: 5rem;
+            font-size: 1.25em;
+            line-height: 140%;
+        }
     }
     h3 {
         line-height: 1.75em;
@@ -358,13 +354,6 @@ display: -webkit-flexbox;
     background-color: $ovopy-alt;
 }
 
-.gyve {
-    background-color: $IMT;
-}
-.gyve:hover {
-    background-color: $IMT-alt;
-}
-
 .justlikehome {
     background-color: $justlikehome;
 }
@@ -372,19 +361,11 @@ display: -webkit-flexbox;
     background-color: $justlikehome-alt;
 }
 
-
-.regent {
-    background-color: $regent;
+.gyve {
+    background-color: $gyve;
 }
-.regent:hover {
-    background-color: $regent-alt;
-}
-
-.another-round {
-    background-color: $another-round;
-}
-.another-round:hover {
-    background-color: $another-round-alt;
+.gyve:hover {
+    background-color: $gyve-alt;
 }
 
 .discovergaming {
@@ -555,7 +536,8 @@ section {
         font-weight: 800;
         font-display: swap;
         @media screen and (max-width: $tablet) {
-            font-family: 'p22_mackinac_prosemibold';
+            font-family: 'p22_mackinac_probold';
+            font-size: 0.95em;
         }
     }
 }
