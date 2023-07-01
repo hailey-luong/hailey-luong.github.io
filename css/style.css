@@ -912,7 +912,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .nav-links .nav-active, .footer-links .nav-active {
-    font-family: 'p22_mackinac_probold';
+    font-family: 'p22_mackinac_probook';
     font-size: 0.95em;
   }
 }
