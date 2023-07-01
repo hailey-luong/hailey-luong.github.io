@@ -19,6 +19,7 @@ html, body {
 
 html {
     position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 .flex-container:before {
@@ -230,8 +231,10 @@ display: -webkit-flexbox;
         margin-top: 1em;
         @media screen and (max-width: $mobile) {
             margin-right: 5rem;
-            font-size: 1.375em;
-            line-height: 140%;
+            font-size: 1.25em;
+            line-height: 130%;
+            margin-top: 0.5em;
+            width: 90%;
         }
     }
     h3 {
@@ -275,9 +278,6 @@ display: -webkit-flexbox;
         -ms-flex-align: center;
         -webkit-align-items: center;
         font-size: 1.325em;
-        @media screen and (max-width: $mobile) {
-            font-size: 1.5em;
-        }
     }
 }
 
