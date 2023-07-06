@@ -1,6 +1,6 @@
 // edited from https://www.tutorialspoint.com/typing-and-deleting-effect-with-javascript-and-css
 
-const words = ["product designer", "based in toronto"];
+const words = ["visual designer", "based in toronto"];
 let i = 0;
 let counter;
 function typeNow() {
