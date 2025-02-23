@@ -13,13 +13,13 @@ html, body {
     margin: 0;
     padding: 0;
     border: 0;
-    overflow-x:hidden;
 }
 
 html {
     position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden; 
     -webkit-overflow-scrolling: touch;
-    // overflow-y: scroll;
 }
 
 .flex-container:before {
