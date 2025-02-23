@@ -264,12 +264,12 @@ html, body {
   padding: 0;
   border: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 
 html {
   position: relative;
   -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
 }
 
 .flex-container:before {
@@ -682,14 +682,6 @@ html {
   }
 }
 
-.ovopy {
-  background-color: #faebcc;
-}
-
-.ovopy:hover {
-  background-color: #eb9c35;
-}
-
 .justlikehome {
   background-color: #e3ecda;
 }
@@ -703,7 +695,7 @@ html {
 }
 
 .gyve:hover {
-  background-color: #ec614f;
+  background-color: #eb6250;
 }
 
 .discovergaming {

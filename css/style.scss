@@ -14,12 +14,12 @@ html, body {
     padding: 0;
     border: 0;
     overflow-x:hidden;
-    overflow-y: scroll;
 }
 
 html {
     position: relative;
     -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
 }
 
 .flex-container:before {
@@ -350,13 +350,6 @@ display: -webkit-flexbox;
     @media screen and (max-width: $mobile) {
         width: 100%;
     }*/
-}
-
-.ovopy {
-    background-color: $ovopy;
-}
-.ovopy:hover {
-    background-color: $ovopy-alt;
 }
 
 .justlikehome {
