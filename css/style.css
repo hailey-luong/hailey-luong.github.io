@@ -49,7 +49,7 @@ p {
 }
 
 p strong {
-  font-weight: 600;
+  font-weight: 500;
   color: #444444;
 }
 
@@ -165,6 +165,7 @@ h5 {
   font-size: 1.75em;
   margin-top: -1rem;
   line-height: 1.375em;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -627,10 +628,12 @@ html {
 
 .arrow-hover {
   margin-left: .5rem;
+  font-size: 0.825em;
 }
 
 .arrow-hover-left {
   margin-right: .5rem;
+  font-size: 0.825em;
 }
 
 .card:hover {
@@ -859,7 +862,7 @@ html {
 .nav-links a, .footer-links a {
   text-decoration: none;
   font-weight: 350;
-  font-size: 1.125em;
+  font-size: 1em;
   letter-spacing: 0.0125em;
   text-align: center;
   padding: 0;
@@ -868,7 +871,7 @@ html {
 
 @media screen and (max-width: 768px) {
   .nav-links a, .footer-links a {
-    font-size: 1em;
+    font-size: .875em;
   }
 }
 
@@ -901,17 +904,14 @@ html {
 
 .nav-links .nav-active, .footer-links .nav-active {
   color: #5160b8;
-  font-family: 'p22_mackinac_probold';
-  font-size: 1em;
-  font-weight: 800;
-  font-display: swap;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links .nav-active, .footer-links .nav-active {
-    font-family: 'p22_mackinac_probook';
-    font-size: 0.95em;
-  }
+  /* font-family: 'p22_mackinac_probold';
+        font-size: 1em;
+        font-weight: 800;
+        font-display: swap;
+        @media screen and (max-width: $tablet) {
+            font-family: 'p22_mackinac_probook';
+            font-size: 0.95em;
+        } */
 }
 
 .nav-content a, .nav-content li {
@@ -1113,13 +1113,13 @@ html {
 }
 
 .block a:hover .arrow-hover {
-  margin-left: 1.25rem;
+  margin-left: .875rem;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
 .block a:hover .arrow-hover-left {
-  margin-right: 1.25rem;
+  margin-right: .875rem;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }

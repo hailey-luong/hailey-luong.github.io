@@ -306,10 +306,12 @@ display: -webkit-flexbox;
 
 .arrow-hover {
     margin-left: .5rem;
+    font-size: 0.825em;
 }
 
 .arrow-hover-left {
     margin-right: .5rem;
+    font-size: 0.825em;
 }
 
 .card:hover {
@@ -501,13 +503,13 @@ section {
     a {
         text-decoration: none;
         font-weight: 350;
-        font-size: 1.125em;
+        font-size: 1em;
         letter-spacing: 0.0125em;
         text-align: center;
         padding: 0;
         margin: 0 3rem 0 0;
         @media screen and (max-width: $tablet) {
-            font-size: 1em;
+            font-size: .875em;
         }
     }
     ul {
@@ -534,14 +536,14 @@ section {
     }
     .nav-active {
         color: $secondary-alt;
-        font-family: 'p22_mackinac_probold';
+        /* font-family: 'p22_mackinac_probold';
         font-size: 1em;
         font-weight: 800;
         font-display: swap;
         @media screen and (max-width: $tablet) {
             font-family: 'p22_mackinac_probook';
             font-size: 0.95em;
-        }
+        } */
     }
 }
 
@@ -692,11 +694,11 @@ section {
     }
     a:hover {
         .arrow-hover {
-            margin-left: 1.25rem;
+            margin-left: .875rem;
             transition: all ease 0.3s;
         }
         .arrow-hover-left {
-            margin-right: 1.25rem;
+            margin-right: .875rem;
             transition: all ease 0.3s;
         }
     }
