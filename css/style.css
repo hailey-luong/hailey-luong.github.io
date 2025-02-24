@@ -140,7 +140,7 @@ h3 {
   font-size: 0.75em;
   font-weight: 700;
   letter-spacing: 0.075em;
-  margin-bottom: 0.75em;
+  margin-bottom: 1.25em;
 }
 
 .about-right h3 {
@@ -259,16 +259,18 @@ html, body {
   background-color: #FFFFFF;
   top: 0;
   left: 0;
+  width: 100vw;
+  min-width: 100vw;
   max-width: 100vw;
   margin: 0;
   padding: 0;
   border: 0;
+  overflow-x: hidden;
 }
 
 html {
   position: relative;
   overflow-y: scroll;
-  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -754,10 +756,10 @@ html {
   }
 }
 
-@media screen and (max-width: 768px) {
-  section {
-    margin-left: -1rem;
-  }
+section {
+  /* @media screen and (max-width: $tablet) {
+        margin-left: -1rem;
+    } */
 }
 
 #navbar {
@@ -929,7 +931,7 @@ html {
 
 @media screen and (max-width: 500px) {
   #footer p {
-    font-size: 0.75em;
+    font-size: 0.875em;
   }
 }
 
@@ -967,6 +969,26 @@ html {
           transform: scale(1.25);
   -webkit-transition: all ease  0.175s;
   transition: all ease  0.175s;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links ul {
+    padding-right: 1rem;
+    width: 100%;
+  }
+  .footer-links ul li {
+    max-width: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-links ul {
+    padding-right: 2rem;
+    width: 100%;
+  }
+  .footer-links ul li {
+    max-width: 2rem;
+  }
 }
 
 .about {
@@ -1171,10 +1193,6 @@ html {
 .white {
   background-color: #FFFFFF;
   width: 100vw;
-}
-
-footer {
-  background-color: #FFFFFF;
 }
 
 .video {
@@ -1511,6 +1529,7 @@ footer {
         -webkit-box-direction: normal;
                 flex-direction: column;
         -ms-flex-direction: column;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -1520,12 +1539,6 @@ footer {
   margin: 1rem 0 0 -1rem;
   width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .container-fluid {
-    margin-bottom: -1rem;
-  }
 }
 
 .grid-card {
