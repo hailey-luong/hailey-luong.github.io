@@ -18,18 +18,29 @@ a {
     text-decoration: none;
 }
 
-p, h2, li {
+p, h2, li, h3 {
     font-size: 0.875em;
-    letter-spacing: 0.0125em;
-    font-weight: 325;
+    letter-spacing: 0.02em;
+    font-weight: 350;
     @media screen and (max-width: $mobile) {
         font-size: 1em;
     }
 }
+
+h3 {
+    /* line-height: 2em;
+    text-transform: uppercase;
+    font-size: 0.75em; 
+    letter-spacing: 0.075em; */
+    font-weight: 500;
+    margin-bottom: 1.25em;
+    letter-spacing: 0.025em;
+}
+
 p {
     margin-top: 0.25rem;
     margin-bottom: 0.5rem;
-    line-height: 1.875em;
+    line-height: 1.75em;
     strong {
         font-weight: 500;
         color: $primary-dark;
@@ -78,8 +89,6 @@ h1 {
 }
 
 h2 {
-    font-size: 1em;
-    font-weight: 300;
     margin-top: 3em;
     margin-bottom: 4em;
     letter-spacing: 0.01em;
@@ -101,15 +110,6 @@ h2 span {
     padding-right: 1rem;
 }
 
-h3 {
-    line-height: 2em;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    font-weight: 700;
-    letter-spacing: 0.075em;
-    margin-bottom: 1.25em;
-}
-
 .about-right {
     h3 {
         margin-bottom: 0;
@@ -127,11 +127,12 @@ h4 {
 }
 
 h5 {
-    font-weight: 100;
+    font-weight: 150;
     font-size: 1.75em;
-    margin-top: -1rem;
+    margin-top: 0;
     line-height: 1.375em;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.005em;
     @media screen and (max-width: $desktop) {
         font-size: 1.5em;
     }
@@ -142,11 +143,12 @@ h5 {
     }
     @media screen and (max-width: $tablet) {
         font-size: 2em;
+        margin-bottom: 1.25rem;
     }
     @media screen and (max-width: $mobile) {
         font-size: 1.5em;
     }
-}Z
+}
 
 h6 {
     font-size: 1.25em;

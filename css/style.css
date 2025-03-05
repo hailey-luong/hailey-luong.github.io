@@ -30,22 +30,32 @@ a {
   text-decoration: none;
 }
 
-p, h2, li {
+p, h2, li, h3 {
   font-size: 0.875em;
-  letter-spacing: 0.0125em;
-  font-weight: 325;
+  letter-spacing: 0.02em;
+  font-weight: 350;
 }
 
 @media screen and (max-width: 500px) {
-  p, h2, li {
+  p, h2, li, h3 {
     font-size: 1em;
   }
+}
+
+h3 {
+  /* line-height: 2em;
+    text-transform: uppercase;
+    font-size: 0.75em; 
+    letter-spacing: 0.075em; */
+  font-weight: 500;
+  margin-bottom: 1.25em;
+  letter-spacing: 0.025em;
 }
 
 p {
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
-  line-height: 1.875em;
+  line-height: 1.75em;
 }
 
 p strong {
@@ -105,8 +115,6 @@ h1 em {
 }
 
 h2 {
-  font-size: 1em;
-  font-weight: 300;
   margin-top: 3em;
   margin-bottom: 4em;
   letter-spacing: 0.01em;
@@ -134,15 +142,6 @@ h2 span {
   padding-right: 1rem;
 }
 
-h3 {
-  line-height: 2em;
-  text-transform: uppercase;
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 0.075em;
-  margin-bottom: 1.25em;
-}
-
 .about-right h3 {
   margin-bottom: 0;
 }
@@ -161,11 +160,12 @@ h4 {
 }
 
 h5 {
-  font-weight: 100;
+  font-weight: 150;
   font-size: 1.75em;
-  margin-top: -1rem;
+  margin-top: 0;
   line-height: 1.375em;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.005em;
 }
 
 @media screen and (max-width: 1200px) {
@@ -185,6 +185,7 @@ h5 {
 @media screen and (max-width: 768px) {
   h5 {
     font-size: 2em;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -194,7 +195,6 @@ h5 {
   }
 }
 
-Z
 h6 {
   font-size: 1.25em;
   margin: 0;
@@ -689,7 +689,7 @@ html {
 }
 
 .justlikehome:hover {
-  background-color: #81a54e;
+  background-color: #6f9258;
 }
 
 .gyve {
@@ -697,7 +697,15 @@ html {
 }
 
 .gyve:hover {
-  background-color: #eb6250;
+  background-color: #ea604e;
+}
+
+.convex {
+  background-color: #ccdde9;
+}
+
+.convex:hover {
+  background-color: #446d9b;
 }
 
 .discovergaming {
@@ -716,12 +724,20 @@ html {
   background-color: #5aa2aa;
 }
 
+.plants {
+  background-color: #CEE0DC;
+}
+
+.plants:hover {
+  background-color: #35786e;
+}
+
 .align {
   background-color: #E0E5F3;
 }
 
 .align:hover {
-  background-color: #6777c5;
+  background-color: #5d6591;
 }
 
 .about-banner {
@@ -756,12 +772,11 @@ html {
   }
 }
 
-section {
-  /* @media screen and (max-width: $tablet) {
+/* section {
+    @media screen and (max-width: $tablet) {
         margin-left: -1rem;
-    } */
-}
-
+    } 
+} */
 #navbar {
   position: fixed;
   -webkit-transition: top 0.75s;
@@ -1025,7 +1040,7 @@ section {
 
 .about-right {
   padding-left: 0;
-  margin-top: -2rem;
+  margin-top: -1rem;
   width: 100%;
 }
 
@@ -1078,7 +1093,7 @@ section {
 
 .about-right h3 {
   margin-bottom: 0.5em;
-  margin-top: 1.5em;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 500px) {
