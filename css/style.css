@@ -1171,6 +1171,12 @@ html {
   width: 145px;
 }
 
+@media screen and (max-width: 768px) {
+  .text h3 {
+    width: 100%;
+  }
+}
+
 .text div {
   padding-left: 0;
 }

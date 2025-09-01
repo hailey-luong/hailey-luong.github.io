@@ -747,6 +747,9 @@ display: -webkit-flexbox;
     h3 {
         margin-top: 0.175rem;
         width: 145px;
+        @media screen and (max-width: $tablet) {
+            width: 100%;
+        }
     }
     div {
         padding-left: 0;
