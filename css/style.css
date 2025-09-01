@@ -92,7 +92,6 @@ h1 em {
   font-family: 'Satoshi-Variable', sans-serif;
   font-size: 0.825em;
   font-weight: 300;
-  text-transform: lowercase;
   font-display: swap;
   font-style: normal;
 }
@@ -693,11 +692,11 @@ html {
 }
 
 .gyve {
-  background-color: #ffe5e4;
+  background-color: #ffe0df;
 }
 
 .gyve:hover {
-  background-color: #ea604e;
+  background-color: #dd5a49;
 }
 
 .convex {
@@ -705,15 +704,7 @@ html {
 }
 
 .convex:hover {
-  background-color: #44668c;
-}
-
-.discovergaming {
-  background-color: #e2f2fa;
-}
-
-.discovergaming:hover {
-  background-color: #4976d8;
+  background-color: #3c587b;
 }
 
 .IMT {
@@ -729,7 +720,7 @@ html {
 }
 
 .plants:hover {
-  background-color: #35786e;
+  background-color: #326d6d;
 }
 
 .align {
@@ -1042,25 +1033,17 @@ html {
   padding-left: 0;
   margin-top: -1rem;
   width: 100%;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
 }
 
 @media screen and (max-width: 992px) {
-  .about-right {
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flexbox;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-            flex-direction: row;
-    -ms-flex-direction: row;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 992px) and (max-width: 992px) {
   .about-right {
     overflow: hidden;
   }

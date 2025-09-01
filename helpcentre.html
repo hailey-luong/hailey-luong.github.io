@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87HDME2WWM"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-87HDME2WWM');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Help Centre</title>
+    <link rel="icon" href="images/avatar.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+
+    <link href="css/flexboxgrid.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/satoshi.css" rel="stylesheet">
+    <link href="css/p22.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <SCRIPT language="JavaScript">
+        var password;
+        var password = "";
+        var pass1 = "HL2025@RBC!";
+
+        function passwordPrompt() {
+            password = prompt('Enter password provided on résumé', ' ');
+
+            if (password == pass1 || password == " " + pass1) {
+                blurOff();
+            } else if (password == null) {
+                window.location = "https://haileyluong.ca/";
+            } else if (password == "" || " ") {
+                passwordPrompt();
+            } else {
+                passwordPrompt();
+            }
+        }
+
+        function blurOff() {
+            document.getElementById('blur').style.visibility = 'hidden';
+            document.getElementById('blur').style.display = 'none';
+        }
+
+    </SCRIPT>
+</head>
+
+<body onload="passwordPrompt()">
+<body>
+
+    <!--navbar-->
+    <nav id="navbar" class="nav-down">
+        <div class="nav-content">
+            <div class="name nav-hide">
+                <a href="index.html">
+                    <h4>Hailey Luong</h4>
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-active">
+                            work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="play.html">
+                            play
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            about
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--<div id="blur"></div>-->
+
+    <div class="banner-div convex">
+        <img src="images/helpcentre/card_img.png" alt="Screen from the app" class="banner-img show-on-scroll">
+    </div>
+
+    <section class="block">
+
+        <h1 data-aos="zoom-in-right">Help Centre<br> <em>Webpage Redesign</em></h1>
+        <h2><span>Overview</span></h2>
+        <div class="row about">
+            <div class="col-sm-12 col-md-8">
+                <h5>A rebrand of the Customer Service page for the Royal Bank of Canada.</h5>
+
+                <p>During my design internship at RBC, I contributed to the refresh of the financial institution's Customer Service page — rebranded as Help Centre — with the goal of improving self-serve features and minimizing dependency on call centres. I collaborated with a cross-functional team including Designers, a Product Owner, Business Analyst, and Developers to create a responsive experience that prioritized the user experience. The project spanned across research, exploration, testing, and implementation.
+
+                </p>
+            </div>
+
+            <div class="about-right col-sm-12 col-md-4">
+                <div class="col-xs-6 col-sm-4 col-md-12">
+                    <h3>Timeline</h3>
+                    <p>February - April 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Business Requirements-->
+
+    <section class="block">
+        <h2><span>Overview</span></h2>
+
+        <div class="text">
+            <div class="col-xs-12 col-md-3 col-lg-2">
+                <h3>The Scope</h3>
+            </div>
+            <div class="col-xs-12 col-md-9">
+                <p>Prior to the redesign, the existing Customer Service page was difficult to navigate and did not fulfil the needs of our clients. To guide our design process, we asked ourselves "How might we support our clients and enable them to self-serve and complete/answer their banking needs, without having to visit a branch or contact the call centre?" We defined three overarching objectives:
+                </p>
+            </div>
+        </div>
+
+        <!--Paintpoint cards-->
+
+        <div class="row">
+            <div class="container-fluid">
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>Provide clients with a more efficient self-serve experience
+                        </p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>Integrate a new chatbot feature to enable asynchronous support</p>
+                    </section>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <section class="grid-card">
+                        <p>Align with existing branding and accessibility standards</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding:75.2% 0 0 0;position:relative;" class="iframe-container">
+            <iframe
+                src="https://player.vimeo.com/video/836355915?h=90c81b42f3&byline=0&portrait=0&loop=1&autoplay=1&autopause=0&badge=0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" class="iframe" webkitallowfullscreen
+                mozallowfullscreen allowfullscreen>
+            </iframe>
+        </div>
+
+        </section>
+
+        <!--Design Process-->
+
+        <section class="block">
+            <h2><span>Design Process</span></h2>
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Competitive Analysis</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>We conducted a competitive analysis across ten financial institutions to synthesize their strengths, weaknesses, opportunities, and threats. We discussed observations regarding the UI, page layout, content, and flow, especially when relating to the chatbot functions and support features.</p>
+                </div>
+            </div>
+
+            <img class="img show-on-scroll" src="images/helpcentre/competitive_analysis.png"
+                alt="Snapshot of competitors">
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Pain Points</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>We identified client pain points with the financial institution's existing Customer Service page, noting main frustrations such as:</p>
+                </div>
+            </div>
+
+            <!--Pain point cards-->
+
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>Lengthy wait times with customer service over the phone
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>Difficulty with locating support services on the website</p>
+                        </section>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>Lack of time and flexibility to visit branch locations</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Wireframes</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>To determine information hierarchy, our team created wireframes to explore webpage layouts based on user metrics and popular search terms. We aimed to ensure a balance between providing an informative experience, without overloading the page with content. I also rationalized for the ‘Contact Us’ section to be positioned at the bottom of the webpage to encourage clients to self-serve before seeking customer service support.</p>
+                </div>
+            </div>
+
+            <img class="img show-on-scroll" src="images/helpcentre/wireframes.png" alt="Wireframes">
+
+        </section>
+
+        <!--User Testing-->
+
+        <section class="block">
+            <h2><span>User Testing</span></h2>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Objective</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>We conducted user testing with ten banking clients to gain insight into areas of improvement and ensure that our design offered an intuitive user experience. The testing was performed to validate our designs and highlight any potential opportunities for refinement.</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Process</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>The Design Researcher prepared a research outline and a series of questions to introduce the client to the Help Centre page and prompt further thinking. We hosted ten 30-minute sessions, and I was fortunate to have the opportunity to act as an observer, note-taker, and a moderator on different occasions. Following the sessions, we colour-coded our insights to organize them into 5 categories: important, positive, negative, suggestions, and team ideas.</p>
+                </div>
+            </div>
+
+            <img class="img show-on-scroll" src="images/helpcentre/synthesis.png" alt="Colour-coded sticky notes">
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Takeaways</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>From the usability testing sessions, we gained a number of insights that supported us with better understanding the client. These were some of the major "How Might We?" questions we developed to guide our process forward.</p>
+                </div>
+            </div>
+
+            <!--Takeaway cards-->
+
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>HMW further clarify all of the section headings?
+                            </p>
+                        </section>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>HMW create greater visual interest throughout the page?</p>
+                        </section>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                        <section class="grid-card">
+                            <p>HMW ensure that clients are finding what they need?</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Design Refinement</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>To address the updated "How Might We?" questions, we outlined a few of our next steps, including refining the headings to provide further clarity and rearranging the categories to support clients with locating key information.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="block">
+            <h2><span>Next Steps & Takeaways</span></h2>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Moving Forward</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>Unfortunately, my internship term ended before we were able to complete the Help Centre page. To finalize the project, we would have verified accessibility standards throughout development and conducted internal testing to ensure proper functionality. Post-launch, we would have measured metrics to evaluate success and leverage the data to identify changes for future iterations.</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <h3>Reflection</h3>
+                </div>
+                <div class="col-xs-12 col-md-9">
+                    <p>From research to refinement, RBC's Help Centre redesign was a key learning experience that deepened my understanding of the impact product design could have on the client experience. It demonstrated the power of cross-functional collaboration and continuous iteration which, in combination, amplified our knowledge and capabilities, enabling us to balance meeting business objectives with addressing client needs.</p>
+                </div>
+            </div>
+
+            <img class="img show-on-scroll" src="images/helpcentre/breakpoints.png"
+            alt="Desktop and mobile screens">
+
+            <div>
+                <a href="index.html">
+                    <p><i class="fas fa-arrow-left arrow-hover-left"></i>Return to Homepage</p>
+                </a>
+            </div>
+
+        </section>
+
+        <footer>
+            <div id="footer">
+                <div class="footer-content">
+                    <div>
+                        <p>Designed & coded by me!</p>
+                    </div>
+                    <div>
+                        <div class="footer-links">
+                            <ul>
+                                <li>
+                                    <a href="mailto: luong.hailey@gmail.com">
+                                        <div class="icon"></div>
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/haileyluong/" target="_blank">
+                                        <div class="icon"></div>
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- js links -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
